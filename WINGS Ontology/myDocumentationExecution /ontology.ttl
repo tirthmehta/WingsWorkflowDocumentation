@@ -1,0 +1,304 @@
+@prefix : <http://www.wings-workflows.org/ontology/execution.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.wings-workflows.org/ontology/execution.owl> .
+
+<http://www.wings-workflows.org/ontology/execution.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasEndTime
+:hasEndTime rdf:type owl:ObjectProperty ;
+            rdfs:range xsd:datetime .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasExpandedTemplate
+:hasExpandedTemplate rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Execution ;
+                     rdfs:comment "The WINGS hasExpandedTemplate is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having an WingsWorkflowExpandedTemplate."^^xsd:string ;
+                     rdfs:label "hasExpandedTemplate"^^xsd:string ;
+                     <http://www.w3.org/2004/02/skos/core#example> """
+  @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+
+  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6>
+        a <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
+    ns0:hasPlan 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e> ;
+    ns0:hasStep 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode> ;
+    ns0:hasTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6> ;
+    ns0:hasExpandedTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d> ;
+
+    """^^xsd:string .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasPlan
+:hasPlan rdf:type owl:ObjectProperty ;
+         rdfs:domain :Execution ;
+         rdfs:comment "The WINGS hasPlan is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having an Workflow Instance."^^xsd:string ;
+         rdfs:label "hasPlan"^^xsd:string ;
+         <http://www.w3.org/2004/02/skos/core#example> """
+
+    @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .
+
+    <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a>
+          a <http://www.wings-workflows.org/ontology/workflow.owl#Execution> ;
+      ns0:hasPlan
+        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+        /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62>;        
+      ns0:hasStep 
+        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+        TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode> .     
+
+    """^^xsd:string .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasStartTime
+:hasStartTime rdf:type owl:ObjectProperty ;
+              rdfs:range xsd:datetime .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasStep
+:hasStep rdf:type owl:ObjectProperty ;
+         rdfs:domain :Execution ;
+         rdfs:range :ExecutionStep ;
+         rdfs:comment "The WINGS hasStep is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having an execution step."^^xsd:string ;
+         rdfs:label "hasStep"^^xsd:string ;
+         <http://www.w3.org/2004/02/skos/core#example> """
+
+    @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+
+    <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/    
+    s4-50f3cf38-e9d2-46e7-a552-7576aa3cd962.owl#s4-50f3cf38-e9d2-46e7-a552-7576aa3cd962>
+          a <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
+    ns0:hasPlan 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-a8d16e88-70be-4350-a1e6-0c570ce09f55.owl#s4-a8d16e88-70be-4350-a1e6-0c570ce09f55> ;
+    ns0:hasStep 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-f0a797b3-f237-4642-bc70-3e26caa28157.owl#firstyNode> ;
+    """^^xsd:string .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasTemplate
+:hasTemplate rdf:type owl:ObjectProperty ;
+             rdfs:domain :Execution ;
+             rdfs:comment "The WINGS hasTemplate is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having a template."^^xsd:string ;
+             rdfs:label "hasTemplate"^^xsd:string ;
+             <http://www.w3.org/2004/02/skos/core#example> """
+
+  @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+
+  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6>
+        a <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
+    ns0:hasPlan 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e> ;
+    ns0:hasStep 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode> ;
+    ns0:hasTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6> ;
+
+    """^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasEndTime
+:hasEndTime rdf:type owl:DatatypeProperty .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasExecutionStatus
+:hasExecutionStatus rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "The WINGS hasExecutionStatus is a WINGS workflow data property that represents a WingsWorkflowExecution having a status for its execution that was currently active."^^xsd:string ;
+                    rdfs:label "hasExecutionStatus"^^xsd:string ;
+                    <http://www.w3.org/2004/02/skos/core#example> """
+
+  @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+
+  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6>
+        a <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
+    ns0:hasPlan 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e> ;
+    ns0:hasStep 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode> ;
+    ns0:hasTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6> ;
+    ns0:hasExpandedTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d> ;
+    ns0:hasStartTime 
+      \"2017-07-20T17:13:19.664Z\"^^xsd:dateTime ;
+    ns0:hasEndTime 
+      \"2017-07-20T17:13:19.715Z\"^^xsd:dateTime ;
+    ns0:hasExecutionStatus 
+      \"SUCCESS\"^^xsd:string ;
+    ns0:hasLog 
+      \"\"\"Finished
+      \"\"\"^^xsd:string ;
+    ns0:hasSeededTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704> .
+
+    """^^xsd:string .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasRunId
+:hasRunId rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Execution ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The WINGS hasRunId is a WINGS workflow data property that represents a WingsWorkflowExecution having an runID for its current run."^^xsd:string ;
+          rdfs:label "hasRunId"^^xsd:string .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#hasStartTime
+:hasStartTime rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#datetime
+xsd:datetime rdf:type owl:Class .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#Execution
+:Execution rdf:type owl:Class ;
+           rdfs:comment "The WINGS Execution is a WINGS workflow class that represents the execution of a WINGS Workflow template specification."^^xsd:string ;
+           rdfs:label "Execution"^^xsd:string ;
+           <http://www.w3.org/2004/02/skos/core#example> """
+
+  @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+
+  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6>
+        a <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
+    ns0:hasPlan 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e> ;
+    ns0:hasStep 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode> ;
+    ns0:hasTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6> ;
+    ns0:hasExpandedTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d> ;
+    ns0:hasStartTime 
+      \"2017-07-20T17:13:19.664Z\"^^xsd:dateTime ;
+    ns0:hasEndTime 
+      \"2017-07-20T17:13:19.715Z\"^^xsd:dateTime ;
+    ns0:hasExecutionStatus 
+      \"SUCCESS\"^^xsd:string ;
+    ns0:hasLog 
+      \"\"\"Finished
+      \"\"\"^^xsd:string ;
+    ns0:hasSeededTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704> .
+
+    """^^xsd:string .
+
+
+###  http://www.wings-workflows.org/ontology/execution.owl#ExecutionStep
+:ExecutionStep rdf:type owl:Class ;
+               rdfs:comment "The WINGS ExecutionStep is a WINGS workflow class that represents the execution step (process) of a WINGS Workflow template specification."^^xsd:string ;
+               rdfs:label "ExecutionStep"^^xsd:string ;
+               <http://www.w3.org/2004/02/skos/core#example> """
+
+    @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+    
+    <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-f0a797b3-f237-4642-bc70-3e26caa28157.owl#ExampleNode>
+          a ns0:ExecutionStep ;
+      ns0:hasStartTime 
+        \"2017-07-18T21:14:49.207Z\"^^xsd:dateTime ;
+      ns0:hasEndTime 
+        \"2017-07-18T21:14:49.363Z\"^^xsd:dateTime ;
+      ns0:hasExecutionStatus 
+        \"SUCCESS\"^^xsd:string ;
+      ns0:hasLog 
+        \"\"\"/opt/wings/storage/default/users/tirth/
+        TestingDomain/code/library/firsty/run -i1 /opt/wings/storage/default/users
+        /tirth/TestingDomain/data/finalvalue.txt -o1 /opt/wings/storage/default/users/
+        tirth/TestingDomain/data/OutputFile-5pdyzxvg60iitplr9gh68n0bb1
+        \"\"\"^^xsd:string .
+
+    """^^xsd:string .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasEndTime rdfs:comment "The WINGS hasEndTime is a WINGS workflow data property that represents a WingsWorkflowExecution having an endTime for its execution."^^xsd:string ;
+            rdfs:label "hasEndTime"^^xsd:string ;
+            <http://www.w3.org/2004/02/skos/core#example> """
+
+  @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6>
+        a <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
+    ns0:hasPlan 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e> ;
+    ns0:hasStep 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode> ;
+    ns0:hasTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6> ;
+    ns0:hasExpandedTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d> ;
+    ns0:hasStartTime 
+      \"2017-07-20T17:13:19.664Z\"^^xsd:dateTime ;
+    ns0:hasEndTime 
+      \"2017-07-20T17:13:19.715Z\"^^xsd:dateTime ;
+    ns0:hasExecutionStatus 
+      \"SUCCESS\"^^xsd:string ;
+    ns0:hasLog 
+      \"\"\"Finished
+      \"\"\"^^xsd:string ;
+    ns0:hasSeededTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704> .
+
+    """^^xsd:string .
+
+
+:hasStartTime rdfs:comment "The WINGS hasStartTime is a WINGS workflow data property that represents a WingsWorkflowExecution having an startTime for its execution."^^xsd:string ;
+              rdfs:label "hasStartTime"^^xsd:string ;
+              <http://www.w3.org/2004/02/skos/core#example> """
+  @prefix ns0: <http://www.wings-workflows.org/ontology/execution.owl#> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6>
+        a <http://www.wings-workflows.org/ontology/execution.owl#Execution> ;
+    ns0:hasPlan 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e> ;
+    ns0:hasStep 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode> ;
+    ns0:hasTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6> ;
+    ns0:hasExpandedTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d> ;
+    ns0:hasStartTime 
+      \"2017-07-20T17:13:19.664Z\"^^xsd:dateTime ;
+    ns0:hasEndTime 
+      \"2017-07-20T17:13:19.715Z\"^^xsd:dateTime ;
+    ns0:hasExecutionStatus 
+      \"SUCCESS\"^^xsd:string ;
+    ns0:hasLog 
+      \"\"\"Finished
+      \"\"\"^^xsd:string ;
+    ns0:hasSeededTemplate 
+      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704> .
+    """^^xsd:string .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

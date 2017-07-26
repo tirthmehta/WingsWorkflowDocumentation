@@ -1,0 +1,2237 @@
+<h2  id="crossreference" class="list">Cross reference for WINGS Workflow Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by WINGS Workflow Ontology.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ComponentSetRule"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#ComponentSetRule">ComponentSetRule</a>
+      </li>
+      <li>
+         <a href="#ComponentVariable"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">ComponentVariable</a>
+      </li>
+      <li>
+         <a href="#DataVariable"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable">DataVariable</a>
+      </li>
+      <li>
+         <a href="#IncreaseDimensionality"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#IncreaseDimensionality">
+            <span>increase dimensionality</span>
+         </a>
+      </li>
+      <li>
+         <a href="#InOutLink"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#InOutLink">InOutLink</a>
+      </li>
+      <li>
+         <a href="#InputLink"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#InputLink">InputLink</a>
+      </li>
+      <li>
+         <a href="#Link"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+      </li>
+      <li>
+         <a href="#Metadata"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">Metadata</a>
+      </li>
+      <li>
+         <a href="#NWise"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#NWise">
+            <span>n wise</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Node"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+      </li>
+      <li>
+         <a href="#OutputLink"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#OutputLink">OutputLink</a>
+      </li>
+      <li>
+         <a href="#ParameterVariable"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable">ParameterVariable</a>
+      </li>
+      <li>
+         <a href="#PortSetRule"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#PortSetRule">PortSetRule</a>
+      </li>
+      <li>
+         <a href="#ReduceDimensionality"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#ReduceDimensionality">
+            <span>reduce dimensionality</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Shift"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#Shift">
+            <span>shift</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Variable"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#Variable">Variable</a>
+      </li>
+      <li>
+         <a href="#Workflow"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+      </li>
+      <li>
+         <a href="#WorkflowInstance"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowInstance">WorkflowInstance</a>
+      </li>
+      <li>
+         <a href="#WorkflowTemplate"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate">WorkflowTemplate</a>
+      </li>
+      <li>
+         <a href="#XProduct"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#XProduct">
+            <span>x product</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="ComponentSetRule">
+      <h3>ComponentSetRule<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#ComponentSetRule</p>
+      <div class="comment">
+         <span class="markdown">The WINGS ComponentSetRule is a WINGS workflow class that represents a set of component rules in the workflow specification.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule">set creation rule</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ComponentVariable">
+      <h3>ComponentVariable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable</p>
+      <div class="comment">
+         <span class="markdown">The WINGS ComponentVariable is a WINGS workflow class that represents a component variable in the workflow specification.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Variable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Variable">Variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasComponentBinding"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding">hasComponentBinding</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConcrete"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#isConcrete">isConcrete</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasComponent"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponent">hasComponent</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DataVariable">
+      <h3>DataVariable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#DataVariable</p>
+      <div class="comment">
+         <span class="markdown">The WINGS data variable is a WINGS workflow class that represents a workflow template artifact in OPMW and is a variable in the WINGS template specification.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt;
+      a ns0:DataVariable ;
+      rdfs:comment "center:x=214.0035400390625,y=196.80760192871094"^^xsd:string .
+
+        </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Variable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Variable">Variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDataBinding"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">has data binding</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="IncreaseDimensionality">
+      <h3>increase dimensionality<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#IncreaseDimensionality</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InOutLink">
+      <h3>InOutLink<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#InOutLink</p>
+      <div class="comment">
+         <span class="markdown">The WINGS inout link is a WINGS workflow class that has an origin node, a destination node and a variable.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile_to_countingWords_node_InputTextFile&gt;
+      a ns0:InOutLink ;
+    ns0:hasDestinationNode 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node&gt; ;
+    ns0:hasDestinationPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node_InputTextFile&gt; ;
+    ns0:hasOriginNode 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node&gt; ;
+    ns0:hasOriginPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile&gt; ;
+    ns0:hasVariable 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#Intermediate_Result&gt; .
+
+
+        </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Link"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InputLink">
+      <h3>InputLink<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#InputLink</p>
+      <div class="comment">
+         <span class="markdown">The WINGS input link is a WINGS workflow class that has a destination node and a variable.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt;
+      a ns0:InputLink ;
+    ns0:hasDestinationNode
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    ns0:hasDestinationPort
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+    ns0:hasVariable
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#InputFormattedFile&gt; .
+
+       </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Link"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Link">
+      <h3>Link<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#Link</p>
+      <div class="comment">
+         <span class="markdown">The WINGS Link is a WINGS workflow class that represents a link in the template specification.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#InOutLink"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#InOutLink">InOutLink</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InputLink"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#InputLink">InputLink</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#OutputLink"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#OutputLink">OutputLink</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDestinationNode"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode">hasDestinationNode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasDestinationPort"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort">hasDestinationPort</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOriginNode"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode">hasOriginNode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOriginPort"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort">hasOriginPort</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasVariable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasVariable">hasVariable</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLink"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasLink">hasLink</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Metadata">
+      <h3>Metadata<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#Metadata</p>
+      <div class="comment">
+         <span class="markdown">The WINGS MetaData is a WINGS workflow class that represents the metadata pertaining to a template specification.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+@prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+&lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
+    a ns0:Metadata ;
+  ns0:hasContributor
+    "tirth"^^xsd:string ;
+  ns0:lastUpdateTime
+    "2017-07-14T07:00:00Z"^^xsd:dateTime .
+
+    </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#createdFrom"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#createdFrom">createdFrom</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasContributor"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasContributor">hasContributor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDocumentation"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation">hasDocumentation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#lastUpdateTime"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime">lastUpdateTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#tellmeData"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#tellmeData">tellmeData</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMetadata"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata">hasMetadata</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NWise">
+      <h3>n wise<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#NWise</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Node">
+      <h3>Node<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#Node</p>
+      <div class="comment">
+         <span class="markdown">The WINGS Node is a WINGS workflow class that represents a node in the template specification. The node has components in templates.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt;
+        a ns0:Node ;
+    rdfs:comment
+      "center:x=220,y=130"^^xsd:string ;
+    ns0:hasComponent
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
+    ns0:hasComponentSetCreationRule
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
+    ns0:hasInputPort
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+    tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+    ns0:hasOutputPort
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    ns0:hasPortSetCreationRule 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; .
+
+
+  </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#canRunOn"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">can run on</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasComponent"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponent">hasComponent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasComponentSetCreationRule"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule">hasComponentSetCreationRule</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasInputPort"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort">hasInputPort</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOutputPort"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputPort">hasOutputPort</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPortSetCreationRule"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule">hasPortSetCreationRule</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasWorkflow"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow">hasWorkflow</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDestinationNode"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode">hasDestinationNode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasNode"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasNode">hasNode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOriginNode"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode">hasOriginNode</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OutputLink">
+      <h3>OutputLink<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#OutputLink</p>
+      <div class="comment">
+         <span class="markdown">The WINGS output link is a WINGS workflow class that has an origin node and a variable.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a ns0:OutputLink ;
+    ns0:hasOriginNode
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    ns0:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    ns0:hasVariable
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; . 
+
+   </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Link"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ParameterVariable">
+      <h3>ParameterVariable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable</p>
+      <div class="comment">
+         <span class="markdown">A parameter variable is a WINGS workflow class that represents a description of an input parameter of a workflow step.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+@prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+&lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord&gt;
+      a ns0:ParameterVariable ;
+    rdfs:comment 
+      "center:x=315.0057067871094,y=72.19681549072266"^^xsd:string .
+
+
+   </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Variable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Variable">Variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#autoFill"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#autoFill">autoFill</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasParameterValue"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue">hasParameterValue</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PortSetRule">
+      <h3>PortSetRule<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#PortSetRule</p>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt;
+        a ns0:PortSetRule ;
+    ns0:createSetsOn
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9&gt; ;
+    ns0:createComponentSets
+      true .
+
+ </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule">set creation rule</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReduceDimensionality">
+      <h3>reduce dimensionality<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#ReduceDimensionality</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Shift">
+      <h3>shift<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#Shift</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Variable">
+      <h3>Variable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#Variable</p>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+
+@prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+&lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord&gt;
+        a ns0:ParameterVariable ;
+    rdfs:comment
+      "center:x=315.0057067871094,y=72.19681549072266"^^xsd:string .
+
+   </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ComponentVariable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">ComponentVariable</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DataVariable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable">DataVariable</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ParameterVariable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable">ParameterVariable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#breakPoint"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#breakPoint">breakPoint</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasVariable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasVariable">hasVariable</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#mapsToVariable"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable">mapsToVariable</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Workflow">
+      <h3>Workflow<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#Workflow</p>
+      <div class="comment">
+         <span class="markdown">The WINGS workflow is a class in the WINGS Ontology that represents the entire workflow created in the WINGS workflow system.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#WorkflowInstance"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowInstance">WorkflowInstance</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#WorkflowTemplate"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate">WorkflowTemplate</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasInputRole"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasInputRole">hasInputRole</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLink"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasLink">hasLink</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMetadata"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata">hasMetadata</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasNode"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasNode">hasNode</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOutputRole"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole">hasOutputRole</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRules"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasRules">hasRules</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasVersion"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasVersion">hasVersion</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasWorkflow"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow">hasWorkflow</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WorkflowInstance">
+      <h3>WorkflowInstance<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#WorkflowInstance</p>
+      <div class="comment">
+         <span class="markdown">The WINGS WorkflowInstance is a class in the WINGS Ontology that represents the workflow instance that is connected to a workflow execution file by the relation hasPlan workflowInstance.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Workflow"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WorkflowTemplate">
+      <h3>WorkflowTemplate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate</p>
+      <div class="comment">
+         <span class="markdown">The WINGS workflow template is a class in the WINGS Ontology that represents the entire workflow template created in the WINGS workflow system.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#r1&gt;
+        a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+    ns0:hasInputRole 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
+    ns0:hasLink 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
+  
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt; ;
+      ns0:hasMetadata 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#r1_meta&gt; ;
+      ns0:hasNode 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+      ns0:hasOutputRole 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole&gt; ;
+      ns0:hasVersion 
+        3 .
+  </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Workflow"
+               title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="XProduct">
+      <h3>x product<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#XProduct</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#breakPoint"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#breakPoint">
+            <span>breakPoint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#canRunOn"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">
+            <span>can run on</span>
+         </a>
+      </li>
+      <li>
+         <a href="#createSetsOn"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#createSetsOn">createSetsOn</a>
+      </li>
+      <li>
+         <a href="#hasDataBinding"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">
+            <span>has data binding</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasComponent"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponent">hasComponent</a>
+      </li>
+      <li>
+         <a href="#hasComponentBinding"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding">hasComponentBinding</a>
+      </li>
+      <li>
+         <a href="#hasComponentSetCreationRule"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule">hasComponentSetCreationRule</a>
+      </li>
+      <li>
+         <a href="#hasDestinationNode"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode">hasDestinationNode</a>
+      </li>
+      <li>
+         <a href="#hasDestinationPort"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort">hasDestinationPort</a>
+      </li>
+      <li>
+         <a href="#hasExpressionArgument"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasExpressionArgument">hasExpressionArgument</a>
+      </li>
+      <li>
+         <a href="#hasInputPort"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort">hasInputPort</a>
+      </li>
+      <li>
+         <a href="#hasInputRole"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasInputRole">hasInputRole</a>
+      </li>
+      <li>
+         <a href="#hasLink"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasLink">hasLink</a>
+      </li>
+      <li>
+         <a href="#hasMetadata"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata">hasMetadata</a>
+      </li>
+      <li>
+         <a href="#hasNode"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasNode">hasNode</a>
+      </li>
+      <li>
+         <a href="#hasOriginNode"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode">hasOriginNode</a>
+      </li>
+      <li>
+         <a href="#hasOriginPort"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort">hasOriginPort</a>
+      </li>
+      <li>
+         <a href="#hasOutputPort"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputPort">hasOutputPort</a>
+      </li>
+      <li>
+         <a href="#hasOutputRole"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole">hasOutputRole</a>
+      </li>
+      <li>
+         <a href="#hasPortSetCreationRule"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule">hasPortSetCreationRule</a>
+      </li>
+      <li>
+         <a href="#hasVariable"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasVariable">hasVariable</a>
+      </li>
+      <li>
+         <a href="#hasWorkflow"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow">hasWorkflow</a>
+      </li>
+      <li>
+         <a href="#mapsToVariable"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable">mapsToVariable</a>
+      </li>
+      <li>
+         <a href="#satisfiesRole"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#satisfiesRole">satisfiesRole</a>
+      </li>
+   </ul>
+   <div class="entity" id="breakPoint">
+      <h3>breakPoint<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#breakPoint</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Variable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Variable">Variable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#true">true</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="canRunOn">
+      <h3>can run on<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#canRunOn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/resource.owl#Machine">machine</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createSetsOn">
+      <h3>createSetsOn<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#createSetsOn</p>
+      <div class="comment">
+         <span class="markdown">The WINGS createSetsOn is a WINGS workflow object property that represents a connection between a WingsWorkflow SetCreationRule and a Component Variable i.e. a WingsWorkflowNode createSetsOn a WingsWorkflowComponentVariable.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt;
+            a ns0:ComponentSetRule ;
+        ns0:createSetsOn 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/
+          export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
+        ns0:createWorkflowSets 
+          true .
+
+        </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule">set creation rule</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ComponentVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">ComponentVariable</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDataBinding">
+      <h3>has data binding<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DataVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable">DataVariable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasComponent">
+      <h3>hasComponent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasComponent</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasComponent is a WINGS workflow object property that represents a connection between a WingsWorkflow Node and a Component Variable i.e. a WingsWorkflowNode hasComponent a WingsWorkflowComponentVariable.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+        @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt;
+              a ns0:Node ;
+          rdfs:comment 
+            "center:x=220,y=130"^^xsd:string ;
+          ns0:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+            r1.owl#xmltotext_node_comp&gt; ;
+          ns0:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
+          ns0:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+          ns0:hasOutputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+          ns0:hasPortSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; . 
+       </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ComponentVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">ComponentVariable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasComponentBinding">
+      <h3>hasComponentBinding<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasComponentBinding is a WINGS workflow object property that represents a connection between a WingsWorkflowComponentVariable and a ComponentBinding i.e. a WingsWorkflowComponentVariable hasComponentBinding WingsWorkflowComponentBinding.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ComponentVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">ComponentVariable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasComponentSetCreationRule">
+      <h3>hasComponentSetCreationRule<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasComponentSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and a SetCreationRule i.e. a WingsWorkflowNode hasComponentSetCreationRule SetCreationRule.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule">set creation rule</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDestinationNode">
+      <h3>hasDestinationNode<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasDestinationNode is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Node i.e. a WingsWorkflowLink hasDestinationNode a WingsWorkflowNode.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDestinationPort">
+      <h3>hasDestinationPort<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasDestinationPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasDestinationPort WingsWorkflowPort.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Port">port</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasExpressionArgument">
+      <h3>hasExpressionArgument<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasExpressionArgument</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasExpressionArgument is a WINGS workflow object property that represents a connection between a SetCreationExpressio and Port.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Port">port</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression">set creation expression</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInputPort">
+      <h3>hasInputPort<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasInputPort is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and Port i.e. a WingsWorkflowNode hasInputPort WingsWorkflowPort.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Port">port</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInputRole">
+      <h3>hasInputRole<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasInputRole</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasInputRole is a WINGS workflow object property that represents a connection between a WingsWorkflow SetCreationExpression and Port.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+      @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#r1&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        ns0:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+          tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
+        ns0:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+          TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
+      
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt; ;
+          ns0:hasMetadata 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+            /TestingDomain/workflows/r1.owl#r1_meta&gt; ;
+          ns0:hasNode 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/
+            users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+          ns0:hasOutputRole 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/
+            export/users/tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole&gt; ;
+          ns0:hasVersion 
+            3 .
+
+   </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Role">role</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLink">
+      <h3>hasLink<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasLink</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasLink is a WINGS workflow object property that represents a connection between a WingsWorkflow and Link i.e. a WingsWorkflow hasLink WingsWorkflowLink.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Link"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMetadata">
+      <h3>hasMetadata<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasMetadata is a WINGS workflow object property that represents a connection between a WingsWorkflow and MetaData i.e. a WingsWorkflow hasMetadata WingsWorkflowMetaData.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Metadata"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">Metadata</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNode">
+      <h3>hasNode<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasNode</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasNode is a WINGS workflow object property that represents a connection between a WingsWorkflow and Node i.e. a WingsWorkflow hasNode WingsWorkflowNode.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOriginNode">
+      <h3>hasOriginNode<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasOriginNode is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Node i.e. a WingsWorkflowLink hasOriginNode a WingsWorkflowNode.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a ns0:OutputLink ;
+    ns0:hasOriginNode 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    ns0:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    ns0:hasVariable 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; .
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOriginPort">
+      <h3>hasOriginPort<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasOriginPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasOriginPort WingsWorkflowPort.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Port">port</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOutputPort">
+      <h3>hasOutputPort<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasOutputPort</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasOutputPort is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and Port i.e. a WingsWorkflowNode hasOutputPort WingsWorkflowPort.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+      @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+      TestingDomain/workflows/r1.owl#xmltotext_node&gt;
+            a ns0:Node ;
+        rdfs:comment 
+          "center:x=220,y=130"^^xsd:string ;
+        ns0:hasComponent 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
+        ns0:hasComponentSetCreationRule
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
+        ns0:hasInputPort 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+        ns0:hasOutputPort 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+        ns0:hasPortSetCreationRule 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; .
+
+
+   </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Port">port</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOutputRole">
+      <h3>hasOutputRole<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasOutputRole is a WINGS workflow object property that represents a connection between a WingsWorkflow and Role i.e. a WingsWorkflow hasOutputRole WingsWorkflowRole.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Role">role</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPortSetCreationRule">
+      <h3>hasPortSetCreationRule<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasPortSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and SetCreationRule i.e. a WingsWorkflowNode hasPortSetCreationRule WingsWorkflowSetCreationRule.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule">set creation rule</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVariable">
+      <h3>hasVariable<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasVariable</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasVariable is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Variable i.e. a WingsWorkflowLink hasVariable a WingsWorkflowVariable.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a ns0:OutputLink ;
+    ns0:hasOriginNode 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    ns0:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    ns0:hasVariable 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; .
+
+   </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Link"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Link">Link</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Variable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Variable">Variable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasWorkflow">
+      <h3>hasWorkflow<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasWorkflow is a WINGS workflow object property that represents a connection between a WingsWorkflow Node and WingsWorkflow i.e. a WingsWorkflowNode hasWorkflow WingsWorkflow.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Node"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Node">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="mapsToVariable">
+      <h3>mapsToVariable<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable</p>
+      <div class="comment">
+         <span class="markdown">The WINGS mapsToVariable is a WINGS workflow object property that represents a connection between a WingsWorkflow Role and WingsWorkflowVariable i.e. a WingsWorkflowNRole mapsToVariable WingsWorkflowVariable.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Role">role</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Variable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Variable">Variable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="satisfiesRole">
+      <h3>satisfiesRole<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#satisfiesRole</p>
+      <div class="comment">
+         <span class="markdown">The WINGS satisfiesRole is a WINGS workflow object property that represents a connection between a WingsWorkflowPort and WingsWorkflowRole i.e. a WingsWorkflowPort satisfiesRole WingsWorkflowRole.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt;
+        a ns0:Port ;
+    ns0:satisfiesRole 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role&gt; .
+
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Port">port</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Role">role</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#autoFill"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#autoFill">autoFill</a>
+      </li>
+      <li>
+         <a href="#createComponentSets"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#createComponentSets">createComponentSets</a>
+      </li>
+      <li>
+         <a href="#createdFrom"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#createdFrom">createdFrom</a>
+      </li>
+      <li>
+         <a href="#createWorkflowSets"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#createWorkflowSets">createWorkflowSets</a>
+      </li>
+      <li>
+         <a href="#hasContributor"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasContributor">hasContributor</a>
+      </li>
+      <li>
+         <a href="#hasDimensionality"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasDimensionality">hasDimensionality</a>
+      </li>
+      <li>
+         <a href="#hasDocumentation"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation">hasDocumentation</a>
+      </li>
+      <li>
+         <a href="#hasParameterValue"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue">hasParameterValue</a>
+      </li>
+      <li>
+         <a href="#hasRoleID"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasRoleID">hasRoleID</a>
+      </li>
+      <li>
+         <a href="#hasRules"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasRules">hasRules</a>
+      </li>
+      <li>
+         <a href="#hasVersion"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasVersion">hasVersion</a>
+      </li>
+      <li>
+         <a href="#isConcrete"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#isConcrete">isConcrete</a>
+      </li>
+      <li>
+         <a href="#isInactive"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#isInactive">isInactive</a>
+      </li>
+      <li>
+         <a href="#lastUpdateTime"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime">lastUpdateTime</a>
+      </li>
+      <li>
+         <a href="#tellmeData"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#tellmeData">tellmeData</a>
+      </li>
+   </ul>
+   <div class="entity" id="autoFill">
+      <h3>autoFill<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#autoFill</p>
+      <div class="comment">
+         <span class="markdown">The WINGS autoFill is a WINGS workflow data property that represents a WingsWorkflowParameterVariable is autoFillable or not (specified as a boolean).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ParameterVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable">ParameterVariable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createComponentSets">
+      <h3>createComponentSets<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#createComponentSets</p>
+      <div class="comment">
+         <span class="markdown">The WINGS createComponentSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createComponentSets.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule">set creation rule</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createdFrom">
+      <h3>createdFrom<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#createdFrom</p>
+      <div class="comment">
+         <span class="markdown">The WINGS createdFrom is a WINGS workflow data property that represents the WingsWorkflowMetaData has createdFrom as a property.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metadata"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">Metadata</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createWorkflowSets">
+      <h3>createWorkflowSets<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#createWorkflowSets</p>
+      <div class="comment">
+         <span class="markdown">The WINGS createWorkflowSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createWorkflowSets.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule">set creation rule</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasContributor">
+      <h3>hasContributor<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasContributor</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasContributor is a WINGS workflow data property that represents a WingsWorkflow has a contributor (specified as a string).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metadata"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">Metadata</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDimensionality">
+      <h3>hasDimensionality<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasDimensionality</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasDimensionality is a WINGS workflow data property that represents a WingsWorkflow Input is a collection or not (specified as a number(int)).
+    </span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDocumentation">
+      <h3>hasDocumentation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasDocumentation is a WINGS workflow data property that represents a WingsWorkflow metadata contains documentation for the workflow.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metadata"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">Metadata</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParameterValue">
+      <h3>hasParameterValue<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasParameterValue is a WINGS workflow data property that represents a WingsWorkflow parameter variable has a parameter value.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ParameterVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable">ParameterVariable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRoleID">
+      <h3>hasRoleID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasRoleID</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasRoleID is a WINGS workflow data property that represents a WingsWorkflowRole has a role id.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+           @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+           &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+           tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role&gt;
+              ns0:hasRoleID 
+                "InputFormattedFile"^^xsd:string ;
+              ns0:hasDimensionality 
+                0 .
+
+
+       </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.wings-workflows.org/ontology/workflow.owl#Role">role</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRules">
+      <h3>hasRules<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasRules</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasRules is a WINGS workflow data property that represents a WingsWorkflow has a set of rules (specified as strings).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVersion">
+      <h3>hasVersion<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasVersion</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasVersion is a WINGS workflow data property that represents a WingsWorkflow has a version number.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#r1&gt;
+        a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+    ns0:hasInputRole 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
+    ns0:hasLink 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
+  
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt; ;
+      ns0:hasMetadata 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#r1_meta&gt; ;
+      ns0:hasNode 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+      ns0:hasOutputRole 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole&gt; ;
+      ns0:hasVersion 
+        3 .
+
+   </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Workflow"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">Workflow</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isConcrete">
+      <h3>isConcrete<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#isConcrete</p>
+      <div class="comment">
+         <span class="markdown">The WINGS isConcrete is a WINGS workflow data property that represents a WingsWorkflow Component Variable is abstract or concrete.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt;
+    ns0:hasComponentBinding
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/library.owl#xmltotext&gt; ;
+    ns0:isConcrete
+      true . 
+
+   </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ComponentVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">ComponentVariable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isInactive">
+      <h3>isInactive<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#isInactive</p>
+      <div class="comment">
+         <span class="markdown">The WINGS isInactive is a WINGS workflow data property that represents a WingsWorkflow is active or not.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lastUpdateTime">
+      <h3>lastUpdateTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime</p>
+      <div class="comment">
+         <span class="markdown">The WINGS lastUpdateTime is a WINGS workflow data property that represents a WingsWorkflow has a last updated time(the range being a dateTime).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metadata"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">Metadata</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tellmeData">
+      <h3>tellmeData<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#tellmeData</p>
+      <div class="comment">
+         <span class="markdown">The WINGS tellmeData is a WINGS workflow data property that represents a WingsWorkflowMetadata has a property for knowing the data (specifying the data as a set of strings).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Metadata"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">Metadata</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

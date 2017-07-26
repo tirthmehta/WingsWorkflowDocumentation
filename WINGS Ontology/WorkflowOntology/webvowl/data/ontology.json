@@ -1,0 +1,1545 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.wings-workflows.org/ontology/resource.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.wings-workflows.org/ontology/workflow.owl" ],
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 26,
+    "objectPropertyCount" : 25,
+    "datatypePropertyCount" : 16,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n@prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord>\n      a ns0:ParameterVariable ;\n    rdfs:comment \n      \"center:x=315.0057067871094,y=72.19681549072266\"^^xsd:string .\n\n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ParameterVariable",
+      "undefined" : "ParameterVariable"
+    },
+    "comment" : {
+      "undefined" : "A parameter variable is a WINGS workflow class that represents a description of an input parameter of a workflow step."
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#OutputLink",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a ns0:OutputLink ;\n    ns0:hasOriginNode\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasVariable\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> . \n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OutputLink",
+      "undefined" : "OutputLink"
+    },
+    "comment" : {
+      "undefined" : "The WINGS output link is a WINGS workflow class that has an origin node and a variable."
+    },
+    "id" : "23",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "32",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#NWise",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NWise"
+    },
+    "id" : "18",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#InOutLink",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile_to_countingWords_node_InputTextFile>\n      a ns0:InOutLink ;\n    ns0:hasDestinationNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node> ;\n    ns0:hasDestinationPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node_InputTextFile> ;\n    ns0:hasOriginNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node> ;\n    ns0:hasOriginPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile> ;\n    ns0:hasVariable \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#Intermediate_Result> .\n\n\n        ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InOutLink",
+      "undefined" : "InOutLink"
+    },
+    "comment" : {
+      "undefined" : "The WINGS inout link is a WINGS workflow class that has an origin node, a destination node and a variable."
+    },
+    "id" : "42",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "46",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#InputLink",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input>\n      a ns0:InputLink ;\n    ns0:hasDestinationNode\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasDestinationPort\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n    ns0:hasVariable\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#InputFormattedFile> .\n\n       ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InputLink",
+      "undefined" : "InputLink"
+    },
+    "comment" : {
+      "undefined" : "The WINGS input link is a WINGS workflow class that has a destination node and a variable."
+    },
+    "id" : "47",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "49",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "54",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComponentVariable",
+      "undefined" : "ComponentVariable"
+    },
+    "comment" : {
+      "undefined" : "The WINGS ComponentVariable is a WINGS workflow class that represents a component variable in the workflow specification."
+    },
+    "id" : "12",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/resource.owl#Machine",
+    "baseIri" : "http://www.wings-workflows.org/ontology/resource.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Machine"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#DataVariable",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#OutputTextFile>\n      a ns0:DataVariable ;\n      rdfs:comment \"center:x=214.0035400390625,y=196.80760192871094\"^^xsd:string .\n\n        ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataVariable",
+      "undefined" : "DataVariable"
+    },
+    "comment" : {
+      "undefined" : "The WINGS data variable is a WINGS workflow class that represents a workflow template artifact in OPMW and is a variable in the WINGS template specification."
+    },
+    "id" : "27",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#WorkflowInstance",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkflowInstance",
+      "undefined" : "WorkflowInstance"
+    },
+    "comment" : {
+      "undefined" : "The WINGS WorkflowInstance is a class in the WINGS Ontology that represents the workflow instance that is connected to a workflow execution file by the relation hasPlan workflowInstance."
+    },
+    "id" : "29",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Port",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Port"
+    },
+    "id" : "44"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#IncreaseDimensionality",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IncreaseDimensionality"
+    },
+    "id" : "69",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Workflow",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Workflow",
+      "undefined" : "Workflow"
+    },
+    "subClasses" : [ "29", "20" ],
+    "comment" : {
+      "undefined" : "The WINGS workflow is a class in the WINGS Ontology that represents the entire workflow created in the WINGS workflow system."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n  \n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#r1>\n        a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n    ns0:hasInputRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n    ns0:hasLink \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n  \n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input> ;\n      ns0:hasMetadata \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#r1_meta> ;\n      ns0:hasNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n      ns0:hasOutputRole \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole> ;\n      ns0:hasVersion \n        3 .\n  ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WorkflowTemplate",
+      "undefined" : "WorkflowTemplate"
+    },
+    "comment" : {
+      "undefined" : "The WINGS workflow template is a class in the WINGS Ontology that represents the entire workflow template created in the WINGS workflow system."
+    },
+    "id" : "20",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Role",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role"
+    },
+    "id" : "40"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#PortSetRule",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/s6.owl#third_node_prule>\n        a ns0:PortSetRule ;\n    ns0:createSetsOn\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9> ;\n    ns0:createComponentSets\n      true .\n\n ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PortSetRule",
+      "undefined" : "PortSetRule"
+    },
+    "id" : "31",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#XProduct",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "XProduct"
+    },
+    "id" : "79",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#ReduceDimensionality",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReduceDimensionality"
+    },
+    "id" : "85",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Metadata",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n@prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/\ntirth/TestingDomain/workflows/r1.owl#r1_meta>\n    a ns0:Metadata ;\n  ns0:hasContributor\n    \"tirth\"^^xsd:string ;\n  ns0:lastUpdateTime\n    \"2017-07-14T07:00:00Z\"^^xsd:dateTime .\n\n    ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Metadata",
+      "undefined" : "Metadata"
+    },
+    "comment" : {
+      "undefined" : "The WINGS MetaData is a WINGS workflow class that represents the metadata pertaining to a template specification."
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Variable",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n\n@prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord>\n        a ns0:ParameterVariable ;\n    rdfs:comment\n      \"center:x=315.0057067871094,y=72.19681549072266\"^^xsd:string .\n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Variable",
+      "undefined" : "Variable"
+    },
+    "subClasses" : [ "12", "21", "27" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SetCreationRule"
+    },
+    "subClasses" : [ "25", "31" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Node",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node>\n        a ns0:Node ;\n    rdfs:comment\n      \"center:x=220,y=130\"^^xsd:string ;\n    ns0:hasComponent\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n    ns0:hasComponentSetCreationRule\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n    ns0:hasInputPort\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n    tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n    ns0:hasOutputPort\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasPortSetCreationRule \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> .\n\n\n  ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Node",
+      "undefined" : "Node"
+    },
+    "comment" : {
+      "undefined" : "The WINGS Node is a WINGS workflow class that represents a node in the template specification. The node has components in templates."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "2" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "68"
+  }, {
+    "instances" : 0,
+    "union" : [ "44", "2" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#true",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "true"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Shift",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Shift"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#ComponentSetRule",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComponentSetRule",
+      "undefined" : "ComponentSetRule"
+    },
+    "comment" : {
+      "undefined" : "The WINGS ComponentSetRule is a WINGS workflow class that represents a set of component rules in the workflow specification."
+    },
+    "id" : "25",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SetCreationExpression"
+    },
+    "subClasses" : [ "18", "1", "69", "79", "85" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#Link",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Link",
+      "undefined" : "Link"
+    },
+    "subClasses" : [ "47", "42", "23" ],
+    "comment" : {
+      "undefined" : "The WINGS Link is a WINGS workflow class that represents a link in the template specification."
+    },
+    "id" : "7"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasVersion",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "5",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#r1>\n        a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n    ns0:hasInputRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n    ns0:hasLink \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n  \n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input> ;\n      ns0:hasMetadata \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#r1_meta> ;\n      ns0:hasNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n      ns0:hasOutputRole \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole> ;\n      ns0:hasVersion \n        3 .\n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVersion",
+      "undefined" : "hasVersion"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The WINGS hasVersion is a WINGS workflow data property that represents a WingsWorkflow has a version number."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "8",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a ns0:OutputLink ;\n    ns0:hasOriginNode \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasVariable \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> .\n    ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOriginNode",
+      "undefined" : "hasOriginNode"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The WINGS hasOriginNode is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Node i.e. a WingsWorkflowLink hasOriginNode a WingsWorkflowNode."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasRules",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasRules",
+      "undefined" : "hasRules"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The WINGS hasRules is a WINGS workflow data property that represents a WingsWorkflow has a set of rules (specified as strings)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#isConcrete",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "13",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp>\n    ns0:hasComponentBinding\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/library.owl#xmltotext> ;\n    ns0:isConcrete\n      true . \n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isConcrete",
+      "undefined" : "isConcrete"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "The WINGS isConcrete is a WINGS workflow data property that represents a WingsWorkflow Component Variable is abstract or concrete."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasComponent",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "12",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n        @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node>\n              a ns0:Node ;\n          rdfs:comment \n            \"center:x=220,y=130\"^^xsd:string ;\n          ns0:hasComponent \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/\n            r1.owl#xmltotext_node_comp> ;\n          ns0:hasComponentSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n          ns0:hasInputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n          ns0:hasOutputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n          ns0:hasPortSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> . \n       ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasComponent",
+      "undefined" : "hasComponent"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The WINGS hasComponent is a WINGS workflow object property that represents a connection between a WingsWorkflow Node and a Component Variable i.e. a WingsWorkflowNode hasComponent a WingsWorkflowComponentVariable."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasPortSetCreationRule",
+      "undefined" : "hasPortSetCreationRule"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The WINGS hasPortSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and SetCreationRule i.e. a WingsWorkflowNode hasPortSetCreationRule WingsWorkflowSetCreationRule."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "2",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "16",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "22",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "16",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "22",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasContributor",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasContributor",
+      "undefined" : "hasContributor"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "The WINGS hasContributor is a WINGS workflow data property that represents a WingsWorkflow has a contributor (specified as a string)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasInputRole",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "40",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n      @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#r1>\n            a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n        ns0:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n        ns0:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/\n          TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n      \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input> ;\n          ns0:hasMetadata \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth\n            /TestingDomain/workflows/r1.owl#r1_meta> ;\n          ns0:hasNode \n            <http://ontosoft.isi.edu:8080/wings-portal/export/\n            users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n          ns0:hasOutputRole \n            <http://ontosoft.isi.edu:8080/wings-portal/\n            export/users/tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole> ;\n          ns0:hasVersion \n            3 .\n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputRole",
+      "undefined" : "hasInputRole"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The WINGS hasInputRole is a WINGS workflow object property that represents a connection between a WingsWorkflow SetCreationExpression and Port."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasComponentSetCreationRule",
+      "undefined" : "hasComponentSetCreationRule"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The WINGS hasComponentSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and a SetCreationRule i.e. a WingsWorkflowNode hasComponentSetCreationRule SetCreationRule."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#satisfiesRole",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "40",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile>\n        a ns0:Port ;\n    ns0:satisfiesRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role> .\n\n    ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "satisfiesRole",
+      "undefined" : "satisfiesRole"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The WINGS satisfiesRole is a WINGS workflow object property that represents a connection between a WingsWorkflowPort and WingsWorkflowRole i.e. a WingsWorkflowPort satisfiesRole WingsWorkflowRole."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasInputPort",
+      "undefined" : "hasInputPort"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The WINGS hasInputPort is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and Port i.e. a WingsWorkflowNode hasInputPort WingsWorkflowPort."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#createdFrom",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "createdFrom",
+      "undefined" : "createdFrom"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "The WINGS createdFrom is a WINGS workflow data property that represents the WingsWorkflowMetaData has createdFrom as a property."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasExpressionArgument",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasExpressionArgument",
+      "undefined" : "hasExpressionArgument"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The WINGS hasExpressionArgument is a WINGS workflow object property that represents a connection between a SetCreationExpressio and Port."
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#isInactive",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "isInactive",
+      "undefined" : "isInactive"
+    },
+    "domain" : "54",
+    "comment" : {
+      "undefined" : "The WINGS isInactive is a WINGS workflow data property that represents a WingsWorkflow is active or not."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasDocumentation",
+      "undefined" : "hasDocumentation"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "The WINGS hasDocumentation is a WINGS workflow data property that represents a WingsWorkflow metadata contains documentation for the workflow."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#breakPoint",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "breakPoint",
+      "undefined" : "breakPoint"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The WINGS breakPoint is a WINGS workflow data property that represents a WingsWorkflowVariable always has a breakpoint."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasWorkflow",
+      "undefined" : "hasWorkflow"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The WINGS hasWorkflow is a WINGS workflow object property that represents a connection between a WingsWorkflow Node and WingsWorkflow i.e. a WingsWorkflowNode hasWorkflow WingsWorkflow."
+    },
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#createWorkflowSets",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "createWorkflowSets",
+      "undefined" : "createWorkflowSets"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "The WINGS createWorkflowSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createWorkflowSets."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#createSetsOn",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "68",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule>\n            a ns0:ComponentSetRule ;\n        ns0:createSetsOn \n          <http://ontosoft.isi.edu:8080/wings-portal/\n          export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n        ns0:createWorkflowSets \n          true .\n\n        ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "createSetsOn",
+      "undefined" : "createSetsOn"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "The WINGS createSetsOn is a WINGS workflow object property that represents a connection between a WingsWorkflow SetCreationRule and a Component Variable i.e. a WingsWorkflowNode createSetsOn a WingsWorkflowComponentVariable."
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#canRunOn",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "canRunOn"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasDestinationNode",
+      "undefined" : "hasDestinationNode"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The WINGS hasDestinationNode is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Node i.e. a WingsWorkflowLink hasDestinationNode a WingsWorkflowNode."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasParameterValue",
+      "undefined" : "hasParameterValue"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "The WINGS hasParameterValue is a WINGS workflow data property that represents a WingsWorkflow parameter variable has a parameter value."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#derivedFrom",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "derivedFrom"
+    },
+    "domain" : "49",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "range" : "7",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "7",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#createComponentSets",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "createComponentSets",
+      "undefined" : "createComponentSets"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "The WINGS createComponentSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createComponentSets."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "range" : "2",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "2",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "mapsToVariable",
+      "undefined" : "mapsToVariable"
+    },
+    "domain" : "40",
+    "comment" : {
+      "undefined" : "The WINGS mapsToVariable is a WINGS workflow object property that represents a connection between a WingsWorkflow Role and WingsWorkflowVariable i.e. a WingsWorkflowNRole mapsToVariable WingsWorkflowVariable."
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "range" : "7",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasDataBinding"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "range" : "2",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasOriginPort",
+      "undefined" : "hasOriginPort"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The WINGS hasOriginPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasOriginPort WingsWorkflowPort."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#tellmeData",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "tellmeData",
+      "undefined" : "tellmeData"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "The WINGS tellmeData is a WINGS workflow data property that represents a WingsWorkflowMetadata has a property for knowing the data (specifying the data as a set of strings)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasComponentBinding",
+      "undefined" : "hasComponentBinding"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "The WINGS hasComponentBinding is a WINGS workflow object property that represents a connection between a WingsWorkflowComponentVariable and a ComponentBinding i.e. a WingsWorkflowComponentVariable hasComponentBinding WingsWorkflowComponentBinding."
+    },
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasVariable",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "22",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a ns0:OutputLink ;\n    ns0:hasOriginNode \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasVariable \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> .\n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasVariable",
+      "undefined" : "hasVariable"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The WINGS hasVariable is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Variable i.e. a WingsWorkflowLink hasVariable a WingsWorkflowVariable."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#autoFill",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "autoFill",
+      "undefined" : "autoFill"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "The WINGS autoFill is a WINGS workflow data property that represents a WingsWorkflowParameterVariable is autoFillable or not (specified as a boolean)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasMetadata",
+      "undefined" : "hasMetadata"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The WINGS hasMetadata is a WINGS workflow object property that represents a connection between a WingsWorkflow and MetaData i.e. a WingsWorkflow hasMetadata WingsWorkflowMetaData."
+    },
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasOutputPort",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "44",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n      @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/\n      TestingDomain/workflows/r1.owl#xmltotext_node>\n            a ns0:Node ;\n        rdfs:comment \n          \"center:x=220,y=130\"^^xsd:string ;\n        ns0:hasComponent \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n        ns0:hasComponentSetCreationRule\n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n        ns0:hasInputPort \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n        ns0:hasOutputPort \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n        ns0:hasPortSetCreationRule \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> .\n\n\n   ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputPort",
+      "undefined" : "hasOutputPort"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The WINGS hasOutputPort is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and Port i.e. a WingsWorkflowNode hasOutputPort WingsWorkflowPort."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasOutputRole",
+      "undefined" : "hasOutputRole"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The WINGS hasOutputRole is a WINGS workflow object property that represents a connection between a WingsWorkflow and Role i.e. a WingsWorkflow hasOutputRole WingsWorkflowRole."
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasRoleID",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "96",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n           @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n           <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n           tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role>\n              ns0:hasRoleID \n                \"InputFormattedFile\"^^xsd:string ;\n              ns0:hasDimensionality \n                0 .\n\n\n       ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRoleID",
+      "undefined" : "hasRoleID"
+    },
+    "domain" : "40",
+    "comment" : {
+      "undefined" : "The WINGS hasRoleID is a WINGS workflow data property that represents a WingsWorkflowRole has a role id."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasDestinationPort",
+      "undefined" : "hasDestinationPort"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The WINGS hasDestinationPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasDestinationPort WingsWorkflowPort."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDimensionality",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasDimensionality",
+      "undefined" : "hasDimensionality"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "The WINGS hasDimensionality is a WINGS workflow data property that represents a WingsWorkflow Input is a collection or not (specified as a number(int)).\n    "
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasNode",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasNode",
+      "undefined" : "hasNode"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The WINGS hasNode is a WINGS workflow object property that represents a connection between a WingsWorkflow and Node i.e. a WingsWorkflow hasNode WingsWorkflowNode."
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "lastUpdateTime",
+      "undefined" : "lastUpdateTime"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "The WINGS lastUpdateTime is a WINGS workflow data property that represents a WingsWorkflow has a last updated time(the range being a dateTime)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasLink",
+    "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasLink",
+      "undefined" : "hasLink"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The WINGS hasLink is a WINGS workflow object property that represents a connection between a WingsWorkflow and Link i.e. a WingsWorkflow hasLink WingsWorkflowLink."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  } ]
+}

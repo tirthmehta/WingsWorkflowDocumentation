@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.wings-workflows.org/ontology/component.owl#"
+     xml:base="http://www.wings-workflows.org/ontology/component.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.wings-workflows.org/ontology/component.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasArgument -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasArgument">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasArgument is a WINGS workflow component object property that represents a connection between a WingsWorkflowComponent and the component&apos;s argument i.e. a WingsWorkflowComponent hasArgument a WingsWorkflowComponentArgument.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasArgument</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasInput">
+        <rdfs:subPropertyOf rdf:resource="http://www.wings-workflows.org/ontology/component.owl#hasArgument"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasInput is a WINGS workflow component object property that represents a connection between a WingsWorkflowComponent and the component&apos;s argument i.e. a WingsWorkflowComponent hasInput a WingsWorkflowComponentArgument.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasInput</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasOutput -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasOutput">
+        <rdfs:subPropertyOf rdf:resource="http://www.wings-workflows.org/ontology/component.owl#hasArgument"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/component.owl#DataArgument"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasOutput is a WINGS workflow component object property that represents a connection between a WingsWorkflowComponent and the component&apos;s data argument i.e. a WingsWorkflowComponent hasOutput a WingsWorkflowDataArgument.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasOutput</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasArgumentID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasArgumentID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasArgumentID is a WINGS workflow component data property that represents a WingsWorkflowComponent having a argumentID (specified as string) for its component.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasArgumentID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasArgumentIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasArgumentIndex">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasArgumentIndex is a WINGS workflow component data property that represents a WingsWorkflowComponent having a argumentIndex (specified as a number(int) eg. 0,1,2,...) for its component.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasArgumentIndex</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasArgumentName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasArgumentName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasArgumentName is a WINGS workflow component data property that represents a WingsWorkflowComponent having a argumentName (specified as a string) for its component.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasArgumentName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasBindingID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasBindingID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasBindingID is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having a bindingID (specified as a string) for its componentArgument.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasBindingID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasDimensionIndexProperties -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasDimensionIndexProperties">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionIndexProperties is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensional index properties (specified as a string) for its componentArgument.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDimensionIndexProperties</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasDimensionSizes -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasDimensionSizes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionSizes is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimemsional sizes (specified as a string) for its componentArgument.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDimensionSizes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasDimensionality -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasDimensionality">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionality is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensionality (specficied as a number(int) 0,1).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDimensionality</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	        &lt;https://w3id.org/wings/TestingDomain#INPUTFILE&gt;
+	        a  &lt;https://w3id.org/wings/TestingDomain/Data/TextFile&gt; ,
+	           &lt;https://w3id.org/wings/TestingDomain/Data/DataArgument&gt; ,
+	           &lt;https://w3id.org/wings/TestingDomain#TextFile&gt; ,
+	           &lt;https://w3id.org/wings/TestingDomain#DataArgument&gt; ;
+	        
+            &lt;http://www.wings-workflows.org/ontology/component.owl#hasArgumentID&gt;
+	                &quot;InputFile&quot; ;
+	        &lt;http://www.wings-workflows.org/ontology/component.owl#hasArgumentName&gt;
+	                &quot;-i1&quot; ;
+	        &lt;http://www.wings-workflows.org/ontology/component.owl#hasDimensionality&gt;
+	                &quot;0&quot;^^xsd:int .
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasDocumentation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasDocumentation">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDocumentation is a WINGS workflow component data property that represents a WingsWorkflowComponent having a documentation for its component.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDocumentation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasLocation">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasLocation is a WINGS workflow component data property that represents a WingsWorkflowComponent having a location (specified as a string) for its component.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasLocation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasRule -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasRule">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasRule is a WINGS workflow component data property that represents a WingsWorkflowComponent having a rule (specified as a block of code in strings) for its component.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasRule</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#hasValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ParameterArgument"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasValue is a WINGS workflow component data property that represents a WingsWorkflowComponentParameterArgument having a value for the parameter.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#isConcrete -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#isConcrete">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS isConcrete is a WINGS workflow component data property that represents a WingsWorkflowComponent is abstract or not. If it is abstract then the value is false, else its true. (range is boolean) </rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isConcrete</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        &lt;https://w3id.org/wings/TestingDomain#SORT_V1&gt;
+        a           &lt;https://w3id.org/wings/TestingDomain#SORT_CLASSV1&gt; ;
+        			rdfs:label  &quot;SORT&quot; ;
+        &lt;http://www.w3.org/ns/prov#wasAttributedTo&gt;
+                &quot;tirth&quot; ;
+        &lt;http://www.wings-workflows.org/ontology/component.owl#hasDocumentation&gt;
+                &quot;&quot; ;
+                
+        &lt;http://www.wings-workflows.org/ontology/component.owl#hasInput&gt;
+            &lt;https://w3id.org/wings/TestingDomain#INPUTFILE&gt; ,
+            &lt;https://w3id.org/wings/TestingDomain#INPUTWORD&gt; ,
+            &lt;https://w3id.org/wings/TestingDomain#SECOND-INPUTFILE&gt; ;
+
+        &lt;http://www.wings-workflows.org/ontology/component.owl#hasOutput&gt;
+            &lt;https://w3id.org/wings/TestingDomain#OUTPUTFILE&gt; ;
+        &lt;http://www.wings-workflows.org/ontology/component.owl#isConcrete&gt;
+                false .
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#isInvalid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/component.owl#isInvalid">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS isInvalid is a WINGS workflow component data property that represents a WingsWorkflowComponent is either valid or not.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isInvalid</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#Component -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#Component">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS Component is a WINGS component class that represents a component of WINGS Workflow template specification.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#ComponentArgument -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS ComponentArgument is a WINGS component class that represents a componentArgument in the  WINGS Workflow template specification.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ComponentArgument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#DataArgument -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#DataArgument">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS DataArgument is a WINGS component class that represents a data based argument and it has the Component argument as a subclass.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataArgument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/component.owl#ParameterArgument -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#ParameterArgument">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS ParameterArgument is a WINGS component class that represents a parameter based argument and it has the Component argument as a subclass.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ParameterArgument</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

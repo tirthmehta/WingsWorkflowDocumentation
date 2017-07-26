@@ -1,0 +1,449 @@
+<h2  id="crossreference" class="list">Cross reference for WINGS Execution Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by WINGS Execution Ontology.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Execution"
+            title="http://www.wings-workflows.org/ontology/execution.owl#Execution">Execution</a>
+      </li>
+      <li>
+         <a href="#ExecutionStep"
+            title="http://www.wings-workflows.org/ontology/execution.owl#ExecutionStep">ExecutionStep</a>
+      </li>
+   </ul>
+   <div class="entity" id="Execution">
+      <h3>Execution<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#Execution</p>
+      <div class="comment">
+         <span class="markdown">The WINGS Execution is a WINGS workflow class that represents the execution of a WINGS Workflow template specification.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
+        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
+    ns0:hasPlan 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
+    ns0:hasStep 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
+    ns0:hasTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+    ns0:hasExpandedTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
+    ns0:hasStartTime 
+      "2017-07-20T17:13:19.664Z"^^xsd:dateTime ;
+    ns0:hasEndTime 
+      "2017-07-20T17:13:19.715Z"^^xsd:dateTime ;
+    ns0:hasExecutionStatus 
+      "SUCCESS"^^xsd:string ;
+    ns0:hasLog 
+      """Finished
+      """^^xsd:string ;
+    ns0:hasSeededTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704&gt; .
+
+    </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasExpandedTemplate"
+               title="http://www.wings-workflows.org/ontology/execution.owl#hasExpandedTemplate">hasExpandedTemplate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPlan"
+               title="http://www.wings-workflows.org/ontology/execution.owl#hasPlan">hasPlan</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRunId"
+               title="http://www.wings-workflows.org/ontology/execution.owl#hasRunId">hasRunId</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStep"
+               title="http://www.wings-workflows.org/ontology/execution.owl#hasStep">hasStep</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTemplate"
+               title="http://www.wings-workflows.org/ontology/execution.owl#hasTemplate">hasTemplate</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExecutionStep">
+      <h3>ExecutionStep<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#ExecutionStep</p>
+      <div class="comment">
+         <span class="markdown">The WINGS ExecutionStep is a WINGS workflow class that represents the execution step (process) of a WINGS Workflow template specification.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+    @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+    
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-f0a797b3-f237-4642-bc70-3e26caa28157.owl#ExampleNode&gt;
+          a ns0:ExecutionStep ;
+      ns0:hasStartTime 
+        "2017-07-18T21:14:49.207Z"^^xsd:dateTime ;
+      ns0:hasEndTime 
+        "2017-07-18T21:14:49.363Z"^^xsd:dateTime ;
+      ns0:hasExecutionStatus 
+        "SUCCESS"^^xsd:string ;
+      ns0:hasLog 
+        """/opt/wings/storage/default/users/tirth/
+        TestingDomain/code/library/firsty/run -i1 /opt/wings/storage/default/users
+        /tirth/TestingDomain/data/finalvalue.txt -o1 /opt/wings/storage/default/users/
+        tirth/TestingDomain/data/OutputFile-5pdyzxvg60iitplr9gh68n0bb1
+        """^^xsd:string .
+
+    </pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasStep"
+               title="http://www.wings-workflows.org/ontology/execution.owl#hasStep">hasStep</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasEndTime"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasEndTime">
+            <span>hasEndTime</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasExpandedTemplate"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasExpandedTemplate">hasExpandedTemplate</a>
+      </li>
+      <li>
+         <a href="#hasPlan"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasPlan">hasPlan</a>
+      </li>
+      <li>
+         <a href="#hasStartTime"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasStartTime">
+            <span>hasStartTime</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasStep"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasStep">hasStep</a>
+      </li>
+      <li>
+         <a href="#hasTemplate"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasTemplate">hasTemplate</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasEndTime">
+      <h3>hasEndTime<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasEndTime</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#datetime">datetime</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasExpandedTemplate">
+      <h3>hasExpandedTemplate<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasExpandedTemplate</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasExpandedTemplate is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having an WingsWorkflowExpandedTemplate.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
+        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
+    ns0:hasPlan 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
+    ns0:hasStep 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
+    ns0:hasTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+    ns0:hasExpandedTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
+
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Execution"
+                  title="http://www.wings-workflows.org/ontology/execution.owl#Execution">Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPlan">
+      <h3>hasPlan<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasPlan</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasPlan is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having an Workflow Instance.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+    @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
+          a &lt;http://www.wings-workflows.org/ontology/workflow.owl#Execution&gt; ;
+      ns0:hasPlan
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+        /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;;        
+      ns0:hasStep 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+        TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; .     
+
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Execution"
+                  title="http://www.wings-workflows.org/ontology/execution.owl#Execution">Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStartTime">
+      <h3>hasStartTime<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasStartTime</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#datetime">datetime</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStep">
+      <h3>hasStep<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasStep</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasStep is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having an execution step.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+    @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/    
+    s4-50f3cf38-e9d2-46e7-a552-7576aa3cd962.owl#s4-50f3cf38-e9d2-46e7-a552-7576aa3cd962&gt;
+          a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
+    ns0:hasPlan 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-a8d16e88-70be-4350-a1e6-0c570ce09f55.owl#s4-a8d16e88-70be-4350-a1e6-0c570ce09f55&gt; ;
+    ns0:hasStep 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-f0a797b3-f237-4642-bc70-3e26caa28157.owl#firstyNode&gt; ;
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Execution"
+                  title="http://www.wings-workflows.org/ontology/execution.owl#Execution">Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ExecutionStep"
+                  title="http://www.wings-workflows.org/ontology/execution.owl#ExecutionStep">ExecutionStep</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTemplate">
+      <h3>hasTemplate<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasTemplate</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasTemplate is a WINGS workflow object property that represents a connection between a WingsWorkflowExecution having a template.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
+        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
+    ns0:hasPlan 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
+    ns0:hasStep 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
+    ns0:hasTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Execution"
+                  title="http://www.wings-workflows.org/ontology/execution.owl#Execution">Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasExecutionStatus"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasExecutionStatus">hasExecutionStatus</a>
+      </li>
+      <li>
+         <a href="#hasRunId"
+            title="http://www.wings-workflows.org/ontology/execution.owl#hasRunId">hasRunId</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasExecutionStatus">
+      <h3>hasExecutionStatus<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasExecutionStatus</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasExecutionStatus is a WINGS workflow data property that represents a WingsWorkflowExecution having a status for its execution that was currently active.</span>
+      </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
+        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
+    ns0:hasPlan 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
+    ns0:hasStep 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
+    ns0:hasTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+    ns0:hasExpandedTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
+    ns0:hasStartTime 
+      "2017-07-20T17:13:19.664Z"^^xsd:dateTime ;
+    ns0:hasEndTime 
+      "2017-07-20T17:13:19.715Z"^^xsd:dateTime ;
+    ns0:hasExecutionStatus 
+      "SUCCESS"^^xsd:string ;
+    ns0:hasLog 
+      """Finished
+      """^^xsd:string ;
+    ns0:hasSeededTemplate 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704&gt; .
+
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRunId">
+      <h3>hasRunId<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/execution.owl#hasRunId</p>
+      <div class="comment">
+         <span class="markdown">The WINGS hasRunId is a WINGS workflow data property that represents a WingsWorkflowExecution having an runID for its current run.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Execution"
+                  title="http://www.wings-workflows.org/ontology/execution.owl#Execution">Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
