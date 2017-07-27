@@ -1,0 +1,1513 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.wings-workflows.org/ontology/workflow.owl#"
+     xml:base="http://www.wings-workflows.org/ontology/workflow.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.wings-workflows.org/ontology/workflow.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#breakPoint -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#breakPoint">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#true"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#canRunOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/resource.owl#Machine"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canRunOn</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt;
+            a workflow:Node ;
+        rdfs:comment 
+          &quot;center:x=262.99648571014404,y=280.32958602905273&quot;^^xsd:string ;
+        workflow:hasComponent 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords&gt; ;
+        workflow:hasInputPort 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_InputTextFile_0001&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_WordInput_0001&gt; ;
+        workflow:hasOutputPort 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_OutputTextFile_1&gt; ;
+        workflow:canRunOn 
+          &lt;http://www.wings-workflows.org/ontology/resource.owl#Localhost&gt; ;
+        workflow:derivedFrom 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node&gt; .
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#createSetsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createSetsOn">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+                    <rdf:Description rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS createSetsOn is a WINGS workflow object property that represents a connection between a WingsWorkflow SetCreationRule and a Component Variable i.e. a WingsWorkflowNode createSetsOn a WingsWorkflowComponentVariable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">createSetsOn</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt;
+            a workflow:ComponentSetRule ;
+        workflow:createSetsOn 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/
+          export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
+        workflow:createWorkflowSets 
+          true .
+
+        </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#derivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#derivedFrom">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">derivedFrom</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#htmltotextNode&gt;
+          a workflow:Node ;
+      rdfs:comment 
+        &quot;center:x=160.701757144928,y=113.66397857666016&quot;^^xsd:string ;
+      workflow:hasComponent 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#htmltotext&gt; ;
+      workflow:hasInputPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#ConvertToText_node_InputFormattedFile_0000&gt; ;
+      workflow:hasOutputPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#ConvertToText_node_OutputTextFile_0&gt; ;
+      workflow:canRunOn 
+        &lt;http://www.wings-workflows.org/ontology/resource.owl#Localhost&gt; ;
+      workflow:derivedFrom 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node&gt; .
+  </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasComponent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasComponent is a WINGS workflow object property that represents a connection between a WingsWorkflow Node and a Component Variable i.e. a WingsWorkflowNode hasComponent a WingsWorkflowComponentVariable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasComponent</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+        @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt;
+              a workflow:Node ;
+          rdfs:comment 
+            &quot;center:x=220,y=130&quot;^^xsd:string ;
+          workflow:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+            r1.owl#xmltotext_node_comp&gt; ;
+          workflow:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
+          workflow:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+          workflow:hasOutputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+          workflow:hasPortSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; . 
+       </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasComponentBinding is a WINGS workflow object property that represents a connection between a WingsWorkflowComponentVariable and a ComponentBinding i.e. a WingsWorkflowComponentVariable hasComponentBinding WingsWorkflowComponentBinding.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasComponentBinding</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt;
+            workflow:hasComponentBinding 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+              library.owl#third&gt; ;
+            workflow:isConcrete 
+              true .
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasComponentSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and a SetCreationRule i.e. a WingsWorkflowNode hasComponentSetCreationRule SetCreationRule.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasComponentSetCreationRule</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+                a workflow:Node ;
+            rdfs:comment 
+              &quot;center:x=314,y=148&quot;^^xsd:string ;
+            workflow:hasComponent 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+            workflow:hasComponentSetCreationRule 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+            workflow:hasInputPort 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+              s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
+              /tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+            workflow:hasOutputPort 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+              s6.owl#third_node_OutputFile&gt; ;
+            workflow:hasPortSetCreationRule 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt; .
+      </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDataBinding</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix data_ontology: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#InputFile_html_or_xml&gt;
+            a workflow:DataVariable, data_ontology:HTMLfile ;
+        rdfs:comment 
+          &quot;center:x=160.701757144928,y=30.331192016601562&quot;^^xsd:string ;
+        workflow:hasDataBinding 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/library.owl#test1.html&gt; ;
+        workflow:derivedFrom 
+          lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#InputFile_html_or_xml&gt; ;
+        data_ontology:hasLanguage 
+          &quot;english&quot;^^xsd:string ;
+        data_ontology:hasSize 
+          4 ;
+        data_ontology:hasTopic 
+          &quot;basic&quot;^^xsd:string .
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDestinationNode is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Node i.e. a WingsWorkflowLink hasDestinationNode a WingsWorkflowNode.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDestinationNode</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+        s6.owl#third_node_InputFile_input&gt;
+              a workflow:InputLink ;
+          workflow:hasDestinationNode 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+          workflow:hasDestinationPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt; ;
+          workflow:hasVariable 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; .
+   </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDestinationPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasDestinationPort WingsWorkflowPort.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDestinationPort</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+        s6.owl#third_node_InputFile_input&gt;
+              a workflow:InputLink ;
+          workflow:hasDestinationNode 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+          workflow:hasDestinationPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt; ;
+          workflow:hasVariable 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; .
+   </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasExpressionArgument -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasExpressionArgument">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+                    <rdf:Description rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasExpressionArgument is a WINGS workflow object property that represents a connection between a SetCreationExpressio and Port.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasExpressionArgument</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9&gt;
+            a workflow:XProduct ;
+        workflow:hasExpressionArgument 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; .
+</skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasInputPort is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and Port i.e. a WingsWorkflowNode hasInputPort WingsWorkflowPort.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasInputPort</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+              a workflow:Node ;
+          rdfs:comment 
+            &quot;center:x=314,y=148&quot;^^xsd:string ;
+          workflow:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+          workflow:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+          workflow:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasInputRole -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasInputRole">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasInputRole is a WINGS workflow object property that represents a connection between a WingsWorkflow SetCreationExpression and Port.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasInputRole</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#r1&gt;
+            a workflow:WorkflowTemplate ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+          tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+          TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
+      
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt; ;
+          workflow:hasMetadata 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+            /TestingDomain/workflows/r1.owl#r1_meta&gt; ;
+          workflow:hasNode 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/
+            users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+          workflow:hasOutputRole 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/
+            export/users/tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole&gt; ;
+          workflow:hasVersion 
+            3 .
+
+   </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasLink -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasLink">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasLink is a WINGS workflow object property that represents a connection between a WingsWorkflow and Link i.e. a WingsWorkflow hasLink WingsWorkflowLink.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasLink</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+        workflow:hasOutputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole&gt; ;
+        workflow:hasVersion 
+          3 .
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasMetadata is a WINGS workflow object property that represents a connection between a WingsWorkflow and MetaData i.e. a WingsWorkflow hasMetadata WingsWorkflowMetaData.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasMetadata</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasNode -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasNode">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasNode is a WINGS workflow object property that represents a connection between a WingsWorkflow and Node i.e. a WingsWorkflow hasNode WingsWorkflowNode.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasNode</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginNode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasOriginNode is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Node i.e. a WingsWorkflowLink hasOriginNode a WingsWorkflowNode.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasOriginNode</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a workflow:OutputLink ;
+    workflow:hasOriginNode 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    workflow:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    workflow:hasVariable 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; .
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasOriginPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasOriginPort WingsWorkflowPort.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasOriginPort</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a workflow:OutputLink ;
+    workflow:hasOriginNode 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    workflow:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+
+   </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasOutputPort -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputPort">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasOutputPort is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and Port i.e. a WingsWorkflowNode hasOutputPort WingsWorkflowPort.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasOutputPort</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+              a workflow:Node ;
+          rdfs:comment 
+            &quot;center:x=314,y=148&quot;^^xsd:string ;
+          workflow:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+          workflow:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+          workflow:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+          workflow:hasOutputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile&gt; ;
+
+   </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasOutputRole is a WINGS workflow object property that represents a connection between a WingsWorkflow and Role i.e. a WingsWorkflow hasOutputRole WingsWorkflowRole.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasOutputRole</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+        workflow:hasOutputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole&gt; ;
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasPortSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and SetCreationRule i.e. a WingsWorkflowNode hasPortSetCreationRule WingsWorkflowSetCreationRule.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasPortSetCreationRule</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+              a workflow:Node ;
+          rdfs:comment 
+            &quot;center:x=314,y=148&quot;^^xsd:string ;
+          workflow:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+          workflow:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+          workflow:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+          workflow:hasOutputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile&gt; ;
+          workflow:hasPortSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt; .
+
+   </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasVariable -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasVariable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasVariable is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Variable i.e. a WingsWorkflowLink hasVariable a WingsWorkflowVariable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasVariable</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a workflow:OutputLink ;
+    workflow:hasOriginNode 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    workflow:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    workflow:hasVariable 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; .
+
+   </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasWorkflow">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Node"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasWorkflow is a WINGS workflow object property that represents a connection between a WingsWorkflow Node and WingsWorkflow i.e. a WingsWorkflowNode hasWorkflow WingsWorkflow.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasWorkflow</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS mapsToVariable is a WINGS workflow object property that represents a connection between a WingsWorkflow Role and WingsWorkflowVariable i.e. a WingsWorkflowNRole mapsToVariable WingsWorkflowVariable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapsToVariable</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;
+            a workflow:Role ;
+        workflow:mapsToVariable 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; ;
+        workflow:hasRoleID 
+          &quot;third_node_InputFile&quot;^^xsd:string ;
+        workflow:hasDimensionality 
+          0 .
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#satisfiesRole -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#satisfiesRole">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+        <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS satisfiesRole is a WINGS workflow object property that represents a connection between a WingsWorkflowPort and WingsWorkflowRole i.e. a WingsWorkflowPort satisfiesRole WingsWorkflowRole.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">satisfiesRole</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt;
+        a workflow:Port ;
+    workflow:satisfiesRole 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role&gt; .
+
+    </skos:example>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#autoFill -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#autoFill">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS autoFill is a WINGS workflow data property that represents a WingsWorkflowParameterVariable is autoFillable or not (specified as a boolean).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autoFill</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#breakPoint -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#breakPoint"/>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#createComponentSets -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createComponentSets">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS createComponentSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createComponentSets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">createComponentSets</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt;
+            a workflow:PortSetRule ;
+        workflow:createSetsOn 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9&gt; ;
+        workflow:createComponentSets 
+          true .
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#createWorkflowSets -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createWorkflowSets">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS createWorkflowSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createWorkflowSets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">createWorkflowSets</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt;
+            a workflow:ComponentSetRule ;
+      workflow:createSetsOn 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+      workflow:createWorkflowSets 
+        true .
+
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#createdFrom -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#createdFrom">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS createdFrom is a WINGS workflow data property that represents the WingsWorkflowMetaData has createdFrom as a property.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">createdFrom</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasContributor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasContributor">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasContributor is a WINGS workflow data property that represents a WingsWorkflow has a contributor (specified as a string).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasContributor</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+    tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
+        a workflow:Metadata ;
+      workflow:hasContributor
+        &quot;tirth&quot;^^xsd:string ;
+      workflow:lastUpdateTime
+        &quot;2017-07-14T07:00:00Z&quot;^^xsd:dateTime .
+
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasDimensionality -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDimensionality">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionality is a WINGS workflow data property that represents a WingsWorkflow Input is a collection or not (specified as a number(int)).
+    </rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDimensionality</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix data_ontology: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;
+            a workflow:Role ;
+        workflow:mapsToVariable 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; ;
+        workflow:hasRoleID 
+          &quot;third_node_InputFile&quot;^^xsd:string ;
+        workflow:hasDimensionality 
+          0 .
+
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDocumentation is a WINGS workflow data property that represents a WingsWorkflow metadata contains documentation for the workflow.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDocumentation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasParameterValue is a WINGS workflow data property that represents a WingsWorkflow parameter variable has a parameter value.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasParameterValue</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix data_ontology: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#WordInput&gt;
+            a workflow:ParameterVariable ;
+        rdfs:comment 
+          &quot;center:x=366.40000000000003,y=196.99678802490234&quot;^^xsd:string ;
+        workflow:derivedFrom 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#WordInput&gt; ;
+        workflow:hasParameterValue 
+          &quot;great&quot;^^xsd:string .
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasRoleID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasRoleID">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasRoleID is a WINGS workflow data property that represents a WingsWorkflowRole has a role id.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasRoleID</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+           @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+           &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+           tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role&gt;
+              workflow:hasRoleID 
+                &quot;InputFormattedFile&quot;^^xsd:string ;
+              workflow:hasDimensionality 
+                0 .
+
+
+       </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasRules -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasRules">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasRules is a WINGS workflow data property that represents a WingsWorkflow has a set of rules (specified as strings).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasRules</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#hasVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#hasVersion">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasVersion is a WINGS workflow data property that represents a WingsWorkflow has a version number.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasVersion</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a workflow:WorkflowTemplate ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+        workflow:hasOutputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole&gt; ;
+        workflow:hasVersion 
+          3 .
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#isConcrete -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#isConcrete">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS isConcrete is a WINGS workflow data property that represents a WingsWorkflow Component Variable is abstract or concrete.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isConcrete</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt;
+          workflow:hasComponentBinding
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/library.owl#xmltotext&gt; ;
+          workflow:isConcrete
+            true . 
+
+   </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#isInactive -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#isInactive">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS isInactive is a WINGS workflow data property that represents a WingsWorkflow is active or not.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isInactive</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS lastUpdateTime is a WINGS workflow data property that represents a WingsWorkflow has a last updated time(the range being a dateTime).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lastUpdateTime</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+    tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
+        a workflow:Metadata ;
+      workflow:hasContributor
+        &quot;tirth&quot;^^xsd:string ;
+      workflow:lastUpdateTime
+        &quot;2017-07-14T07:00:00Z&quot;^^xsd:dateTime .
+
+    </skos:example>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#tellmeData -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#tellmeData">
+        <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Metadata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS tellmeData is a WINGS workflow data property that represents a WingsWorkflowMetadata has a property for knowing the data (specifying the data as a set of strings).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tellmeData</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#true -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#true"/>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/resource.owl#Machine -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/resource.owl#Machine"/>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#ComponentSetRule -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentSetRule">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS ComponentSetRule is a WINGS workflow class that represents a set of component rules in the workflow specification.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ComponentSetRule</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+         @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt;
+              a workflow:ComponentSetRule ;
+            workflow:createSetsOn 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+            workflow:createWorkflowSets 
+              true .
+        </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ComponentVariable">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS ComponentVariable is a WINGS workflow class that represents a component variable in the workflow specification.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ComponentVariable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#DataVariable -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS data variable is a WINGS workflow class that represents a workflow template artifact in OPMW and is a variable in the WINGS template specification.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataVariable</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt;
+          a workflow:DataVariable ;
+          rdfs:comment &quot;center:x=214.0035400390625,y=196.80760192871094&quot;^^xsd:string .
+
+        </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#InOutLink -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#InOutLink">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS inout link is a WINGS workflow class that has an origin node, a destination node and a variable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InOutLink</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile_to_countingWords_node_InputTextFile&gt;
+      a workflow:InOutLink ;
+    workflow:hasDestinationNode 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node&gt; ;
+    workflow:hasDestinationPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node_InputTextFile&gt; ;
+    workflow:hasOriginNode 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node&gt; ;
+    workflow:hasOriginPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile&gt; ;
+    workflow:hasVariable 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+        tirth/TestingDomain/workflows/abstractTest1.owl#Intermediate_Result&gt; .
+
+
+        </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#IncreaseDimensionality -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#IncreaseDimensionality">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#InputLink -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#InputLink">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS input link is a WINGS workflow class that has a destination node and a variable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InputLink</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt;
+          a workflow:InputLink ;
+        workflow:hasDestinationNode
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+            tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+        workflow:hasDestinationPort
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+            tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+        workflow:hasVariable
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+            tirth/TestingDomain/workflows/r1.owl#InputFormattedFile&gt; .
+
+       </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Link -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Link">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS Link is a WINGS workflow class that represents a link in the template specification.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Link</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Metadata -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Metadata">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS MetaData is a WINGS workflow class that represents the metadata pertaining to a template specification.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metadata</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+    tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
+        a workflow:Metadata ;
+      workflow:hasContributor
+        &quot;tirth&quot;^^xsd:string ;
+      workflow:lastUpdateTime
+        &quot;2017-07-14T07:00:00Z&quot;^^xsd:dateTime .
+
+    </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#NWise -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#NWise">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Node -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Node">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS Node is a WINGS workflow class that represents a node in the template specification. The node has components in templates.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Node</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+  @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt;
+        a workflow:Node ;
+    rdfs:comment
+      &quot;center:x=220,y=130&quot;^^xsd:string ;
+    workflow:hasComponent
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
+    workflow:hasComponentSetCreationRule
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
+    workflow:hasInputPort
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+    workflow:hasOutputPort
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    workflow:hasPortSetCreationRule 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; .
+
+  </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#OutputLink -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#OutputLink">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Link"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS output link is a WINGS workflow class that has an origin node and a variable.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OutputLink</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a workflow:OutputLink ;
+    workflow:hasOriginNode
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    workflow:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+    workflow:hasVariable
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; . 
+
+   </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ParameterVariable">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Variable"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A parameter variable is a WINGS workflow class that represents a description of an input parameter of a workflow step.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ParameterVariable</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+@prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord&gt;
+      a workflow:ParameterVariable ;
+    rdfs:comment 
+      &quot;center:x=315.0057067871094,y=72.19681549072266&quot;^^xsd:string .
+
+
+   </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Port -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Port"/>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#PortSetRule -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#PortSetRule">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PortSetRule</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt;
+        a workflow:PortSetRule ;
+    workflow:createSetsOn
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9&gt; ;
+    workflow:createComponentSets
+      true .
+
+ </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#ReduceDimensionality -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#ReduceDimensionality">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Role -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Role"/>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationRule"/>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Shift -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Shift">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Variable -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Variable">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Variable</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+
+@prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord&gt;
+        a workflow:ParameterVariable ;
+    rdfs:comment
+      &quot;center:x=315.0057067871094,y=72.19681549072266&quot;^^xsd:string .
+
+   </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#Workflow -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#Workflow">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS workflow is a class in the WINGS Ontology that represents the entire workflow created in the WINGS workflow system.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workflow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#WorkflowInstance -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowInstance">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS WorkflowInstance is a class in the WINGS Ontology that represents the workflow instance that is connected to a workflow execution file by the relation hasPlan workflowInstance.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WorkflowInstance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#Workflow"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS workflow template is a class in the WINGS Ontology that represents the entire workflow template created in the WINGS workflow system.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WorkflowTemplate</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#r1&gt;
+        a workflow:WorkflowTemplate ;
+    workflow:hasInputRole 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
+    workflow:hasLink 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
+
+  </skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wings-workflows.org/ontology/workflow.owl#XProduct -->
+
+
+    <owl:Class rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#XProduct">
+        <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/workflow.owl#SetCreationExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.wings-workflows.org/ontology/workflow.owl#breakPoint">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS breakPoint is a WINGS workflow data property that represents a WingsWorkflowVariable always has a breakpoint.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breakPoint</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
