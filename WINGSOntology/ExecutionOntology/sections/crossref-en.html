@@ -27,29 +27,32 @@ This section provides details for each class and property defined by WINGS Execu
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
-        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
-    ns0:hasPlan 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
-    ns0:hasStep 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
-    ns0:hasTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
-    ns0:hasExpandedTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
-    ns0:hasStartTime 
-      "2017-07-20T17:13:19.664Z"^^xsd:dateTime ;
-    ns0:hasEndTime 
-      "2017-07-20T17:13:19.715Z"^^xsd:dateTime ;
-    ns0:hasExecutionStatus 
-      "SUCCESS"^^xsd:string ;
-    ns0:hasLog 
-      """Finished
-      """^^xsd:string ;
-    ns0:hasSeededTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704&gt; .
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
+            a workflow:Execution ;
+        workflow:hasPlan
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+              /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;
+              ;        
+        workflow:hasStep 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; . 
+        workflow:hasTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+        workflow:hasExpandedTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
+        workflow:hasStartTime 
+              "2017-07-20T17:13:19.664Z"^^xsd:dateTime ;
+        workflow:hasEndTime 
+              "2017-07-20T17:13:19.715Z"^^xsd:dateTime ;
+        workflow:hasExecutionStatus 
+              "SUCCESS"^^xsd:string ;
+        workflow:hasLog 
+              """Finished"""^^xsd:string ;
+        workflow:hasSeededTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704&gt; .
 
     </pre>
          </dd>
@@ -86,22 +89,22 @@ This section provides details for each class and property defined by WINGS Execu
          <dd>
             <pre>
 
-    @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
     
-    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-f0a797b3-f237-4642-bc70-3e26caa28157.owl#ExampleNode&gt;
-          a ns0:ExecutionStep ;
-      ns0:hasStartTime 
-        "2017-07-18T21:14:49.207Z"^^xsd:dateTime ;
-      ns0:hasEndTime 
-        "2017-07-18T21:14:49.363Z"^^xsd:dateTime ;
-      ns0:hasExecutionStatus 
-        "SUCCESS"^^xsd:string ;
-      ns0:hasLog 
-        """/opt/wings/storage/default/users/tirth/
-        TestingDomain/code/library/firsty/run -i1 /opt/wings/storage/default/users
-        /tirth/TestingDomain/data/finalvalue.txt -o1 /opt/wings/storage/default/users/
-        tirth/TestingDomain/data/OutputFile-5pdyzxvg60iitplr9gh68n0bb1
-        """^^xsd:string .
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-f0a797b3-f237-4642-bc70-3e26caa28157.owl#firstyNode&gt;
+              a workflow:ExecutionStep ;
+        workflow:hasStartTime 
+          "2017-07-18T21:14:49.207Z"^^xsd:dateTime ;
+        workflow:hasEndTime 
+          "2017-07-18T21:14:49.363Z"^^xsd:dateTime ;
+        workflow:hasExecutionStatus 
+          "SUCCESS"^^xsd:string ;
+        workflow:hasLog 
+          """/opt/wings/storage/default/users/tirth/
+          TestingDomain/code/library/firsty/run -i1 /opt/wings/storage/default/users
+          /tirth/TestingDomain/data/finalvalue.txt -o1 /opt/wings/storage/default/users/
+          tirth/TestingDomain/data/OutputFile-5pdyzxvg60iitplr9gh68n0bb1"""^^xsd:string .
 
     </pre>
          </dd>
@@ -180,18 +183,22 @@ This section provides details for each class and property defined by WINGS Execu
          <dt>Example</dt>
          <dd>
             <pre>
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
-        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
-    ns0:hasPlan 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
-    ns0:hasStep 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
-    ns0:hasTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
-    ns0:hasExpandedTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
+            a workflow:Execution ;
+        workflow:hasPlan
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+              /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;
+              ;        
+        workflow:hasStep 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; . 
+        workflow:hasTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+        workflow:hasExpandedTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
 
     </pre>
          </dd>
@@ -222,16 +229,17 @@ This section provides details for each class and property defined by WINGS Execu
          <dd>
             <pre>
 
-    @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
-    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
-          a &lt;http://www.wings-workflows.org/ontology/workflow.owl#Execution&gt; ;
-      ns0:hasPlan
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
-        /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;;        
-      ns0:hasStep 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
-        TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; .     
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
+            a workflow:Execution ;
+        workflow:hasPlan
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+              /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;
+              ;        
+        workflow:hasStep 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; .     
 
     </pre>
          </dd>
@@ -281,15 +289,17 @@ This section provides details for each class and property defined by WINGS Execu
          <dd>
             <pre>
 
-    @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
-    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/    
-    s4-50f3cf38-e9d2-46e7-a552-7576aa3cd962.owl#s4-50f3cf38-e9d2-46e7-a552-7576aa3cd962&gt;
-          a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
-    ns0:hasPlan 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-a8d16e88-70be-4350-a1e6-0c570ce09f55.owl#s4-a8d16e88-70be-4350-a1e6-0c570ce09f55&gt; ;
-    ns0:hasStep 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s4-f0a797b3-f237-4642-bc70-3e26caa28157.owl#firstyNode&gt; ;
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
+            a workflow:Execution ;
+        workflow:hasPlan
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+              /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;
+              ;        
+        workflow:hasStep 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; .  
     </pre>
          </dd>
       </dl>
@@ -325,16 +335,31 @@ This section provides details for each class and property defined by WINGS Execu
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
-        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
-    ns0:hasPlan 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
-    ns0:hasStep 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
-    ns0:hasTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
+            a workflow:Execution ;
+        workflow:hasPlan
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+              /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;
+              ;        
+        workflow:hasStep 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; . 
+        workflow:hasTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+        workflow:hasExpandedTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
+        workflow:hasStartTime 
+              "2017-07-20T17:13:19.664Z"^^xsd:dateTime ;
+        workflow:hasEndTime 
+              "2017-07-20T17:13:19.715Z"^^xsd:dateTime ;
+        workflow:hasExecutionStatus 
+              "SUCCESS"^^xsd:string ;
+        workflow:hasLog 
+              """Finished"""^^xsd:string ;
+        workflow:hasSeededTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704&gt; .
 
     </pre>
          </dd>
@@ -377,29 +402,28 @@ This section provides details for each class and property defined by WINGS Execu
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/execution.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-a32bec4d-7ea6-494f-9adf-a079309756c6.owl#s6-a32bec4d-7ea6-494f-9adf-a079309756c6&gt;
-        a &lt;http://www.wings-workflows.org/ontology/execution.owl#Execution&gt; ;
-    ns0:hasPlan 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e.owl#s6-4d2f0e73-3c51-4843-bc0a-6e4d042af94e&gt; ;
-    ns0:hasStep 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#thirdNode&gt; ;
-    ns0:hasTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
-    ns0:hasExpandedTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
-    ns0:hasStartTime 
-      "2017-07-20T17:13:19.664Z"^^xsd:dateTime ;
-    ns0:hasEndTime 
-      "2017-07-20T17:13:19.715Z"^^xsd:dateTime ;
-    ns0:hasExecutionStatus 
-      "SUCCESS"^^xsd:string ;
-    ns0:hasLog 
-      """Finished
-      """^^xsd:string ;
-    ns0:hasSeededTemplate 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6-5f66fa60-8cf9-4f31-a352-15713d184704.owl#s6-5f66fa60-8cf9-4f31-a352-15713d184704&gt; .
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#abstractTest1-83-cdd28105-a8a5-4fe8-bfb9-c8291a31ac7a&gt;
+            a workflow:Execution ;
+        workflow:hasPlan
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
+              /TestingDomain/workflows/abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62.owl#abstractTest1-83-fdefb251-3e4a-471b-86ea-2d71b25fdf62&gt;
+              ;        
+        workflow:hasStep 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt; . 
+        workflow:hasTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt; ;
+        workflow:hasExpandedTemplate 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d.owl#s6-64fe41b2-0cd3-41ca-9ffb-09f8a1b39f8d&gt; ;
+        workflow:hasStartTime 
+              "2017-07-20T17:13:19.664Z"^^xsd:dateTime ;
+        workflow:hasEndTime 
+              "2017-07-20T17:13:19.715Z"^^xsd:dateTime ;
+        workflow:hasExecutionStatus 
+              "SUCCESS"^^xsd:string ;
 
     </pre>
          </dd>

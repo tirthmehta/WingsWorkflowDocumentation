@@ -104,6 +104,21 @@ This section provides details for each class and property defined by WINGS Workf
       <div class="comment">
          <span class="markdown">The WINGS ComponentSetRule is a WINGS workflow class that represents a set of component rules in the workflow specification.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+         @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt;
+              a workflow:ComponentSetRule ;
+            workflow:createSetsOn 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+            workflow:createWorkflowSets 
+              true .
+        </pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -161,12 +176,14 @@ This section provides details for each class and property defined by WINGS Workf
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-  tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt;
-      a ns0:DataVariable ;
-      rdfs:comment "center:x=214.0035400390625,y=196.80760192871094"^^xsd:string .
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt;
+          a workflow:DataVariable ;
+          rdfs:comment "center:x=214.0035400390625,y=196.80760192871094"^^xsd:string .
 
         </pre>
          </dd>
@@ -181,7 +198,7 @@ This section provides details for each class and property defined by WINGS Workf
          <dt>is in domain of</dt>
          <dd>
             <a href="#hasDataBinding"
-               title="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">has data binding</a>
+               title="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">hasDataBinding</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -217,23 +234,23 @@ This section provides details for each class and property defined by WINGS Workf
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile_to_countingWords_node_InputTextFile&gt;
-      a ns0:InOutLink ;
-    ns0:hasDestinationNode 
+      a workflow:InOutLink ;
+    workflow:hasDestinationNode 
         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
         tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node&gt; ;
-    ns0:hasDestinationPort 
+    workflow:hasDestinationPort 
         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
         tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node_InputTextFile&gt; ;
-    ns0:hasOriginNode 
+    workflow:hasOriginNode 
         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
         tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node&gt; ;
-    ns0:hasOriginPort 
+    workflow:hasOriginPort 
         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
         tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile&gt; ;
-    ns0:hasVariable 
+    workflow:hasVariable 
         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
         tirth/TestingDomain/workflows/abstractTest1.owl#Intermediate_Result&gt; .
 
@@ -265,20 +282,20 @@ This section provides details for each class and property defined by WINGS Workf
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt;
-      a ns0:InputLink ;
-    ns0:hasDestinationNode
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
-    ns0:hasDestinationPort
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
-    ns0:hasVariable
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#InputFormattedFile&gt; .
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt;
+          a workflow:InputLink ;
+        workflow:hasDestinationNode
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+            tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+        workflow:hasDestinationPort
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+            tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+        workflow:hasVariable
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+            tirth/TestingDomain/workflows/r1.owl#InputFormattedFile&gt; .
 
        </pre>
          </dd>
@@ -350,15 +367,16 @@ This section provides details for each class and property defined by WINGS Workf
          <dd>
             <pre>
 
-@prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-&lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
-    a ns0:Metadata ;
-  ns0:hasContributor
-    "tirth"^^xsd:string ;
-  ns0:lastUpdateTime
-    "2017-07-14T07:00:00Z"^^xsd:dateTime .
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+    tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
+        a workflow:Metadata ;
+      workflow:hasContributor
+        "tirth"^^xsd:string ;
+      workflow:lastUpdateTime
+        "2017-07-14T07:00:00Z"^^xsd:dateTime .
 
     </pre>
          </dd>
@@ -417,29 +435,30 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+  @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
   tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt;
-        a ns0:Node ;
+        a workflow:Node ;
     rdfs:comment
       "center:x=220,y=130"^^xsd:string ;
-    ns0:hasComponent
+    workflow:hasComponent
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
-    ns0:hasComponentSetCreationRule
+    workflow:hasComponentSetCreationRule
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
-    ns0:hasInputPort
+    workflow:hasInputPort
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-    tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
-    ns0:hasOutputPort
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
+    workflow:hasOutputPort
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
-    ns0:hasPortSetCreationRule 
+    workflow:hasPortSetCreationRule 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; .
-
 
   </pre>
          </dd>
@@ -448,7 +467,7 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dt>is in domain of</dt>
          <dd>
             <a href="#canRunOn"
-               title="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">can run on</a>
+               title="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">canRunOn</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasComponent"
                title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponent">hasComponent</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasComponentSetCreationRule"
@@ -490,18 +509,18 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
   tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
-        a ns0:OutputLink ;
-    ns0:hasOriginNode
+        a workflow:OutputLink ;
+    workflow:hasOriginNode
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
-    ns0:hasOriginPort 
+    workflow:hasOriginPort 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
-    ns0:hasVariable
+    workflow:hasVariable
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; . 
 
@@ -532,10 +551,12 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-@prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+@prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord&gt;
-      a ns0:ParameterVariable ;
+      a workflow:ParameterVariable ;
     rdfs:comment 
       "center:x=315.0057067871094,y=72.19681549072266"^^xsd:string .
 
@@ -572,15 +593,15 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
   tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt;
-        a ns0:PortSetRule ;
-    ns0:createSetsOn
+        a workflow:PortSetRule ;
+    workflow:createSetsOn
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9&gt; ;
-    ns0:createComponentSets
+    workflow:createComponentSets
       true .
 
  </pre>
@@ -640,10 +661,11 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
             <pre>
 
 
-@prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+@prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord&gt;
-        a ns0:ParameterVariable ;
+        a workflow:ParameterVariable ;
     rdfs:comment
       "center:x=315.0057067871094,y=72.19681549072266"^^xsd:string .
 
@@ -756,31 +778,18 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
   
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
   tirth/TestingDomain/workflows/r1.owl#r1&gt;
-        a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
-    ns0:hasInputRole 
+        a workflow:WorkflowTemplate ;
+    workflow:hasInputRole 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
-    ns0:hasLink 
+    workflow:hasLink 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
-  
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt; ;
-      ns0:hasMetadata 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#r1_meta&gt; ;
-      ns0:hasNode 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
-      ns0:hasOutputRole 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole&gt; ;
-      ns0:hasVersion 
-        3 .
+
   </pre>
          </dd>
       </dl>
@@ -820,19 +829,15 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       </li>
       <li>
          <a href="#canRunOn"
-            title="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">
-            <span>can run on</span>
-         </a>
+            title="http://www.wings-workflows.org/ontology/workflow.owl#canRunOn">canRunOn</a>
       </li>
       <li>
          <a href="#createSetsOn"
             title="http://www.wings-workflows.org/ontology/workflow.owl#createSetsOn">createSetsOn</a>
       </li>
       <li>
-         <a href="#hasDataBinding"
-            title="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">
-            <span>has data binding</span>
-         </a>
+         <a href="#derivedFrom"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#derivedFrom">derivedFrom</a>
       </li>
       <li>
          <a href="#hasComponent"
@@ -845,6 +850,10 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <li>
          <a href="#hasComponentSetCreationRule"
             title="http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule">hasComponentSetCreationRule</a>
+      </li>
+      <li>
+         <a href="#hasDataBinding"
+            title="http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding">hasDataBinding</a>
       </li>
       <li>
          <a href="#hasDestinationNode"
@@ -941,12 +950,35 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       </div>
    </div>
    <div class="entity" id="canRunOn">
-      <h3>can run on<sup class="type-op" title="object property">op</sup>
+      <h3>canRunOn<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#canRunOn</p>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode&gt;
+            a workflow:Node ;
+        rdfs:comment 
+          "center:x=262.99648571014404,y=280.32958602905273"^^xsd:string ;
+        workflow:hasComponent 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords&gt; ;
+        workflow:hasInputPort 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_InputTextFile_0001&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_WordInput_0001&gt; ;
+        workflow:hasOutputPort 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_OutputTextFile_1&gt; ;
+        workflow:canRunOn 
+          &lt;http://www.wings-workflows.org/ontology/resource.owl#Localhost&gt; ;
+        workflow:derivedFrom 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node&gt; .
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -978,15 +1010,15 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dt>Example</dt>
          <dd>
             <pre>
-      @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt;
-            a ns0:ComponentSetRule ;
-        ns0:createSetsOn 
+            a workflow:ComponentSetRule ;
+        workflow:createSetsOn 
           &lt;http://ontosoft.isi.edu:8080/wings-portal/
           export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
-        ns0:createWorkflowSets 
+        workflow:createWorkflowSets 
           true .
 
         </pre>
@@ -1013,23 +1045,36 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasDataBinding">
-      <h3>has data binding<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="derivedFrom">
+      <h3>derivedFrom<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DataVariable"
-                  title="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable">DataVariable</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#derivedFrom</p>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#htmltotextNode&gt;
+          a workflow:Node ;
+      rdfs:comment 
+        "center:x=160.701757144928,y=113.66397857666016"^^xsd:string ;
+      workflow:hasComponent 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#htmltotext&gt; ;
+      workflow:hasInputPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#ConvertToText_node_InputFormattedFile_0000&gt; ;
+      workflow:hasOutputPort 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#ConvertToText_node_OutputTextFile_0&gt; ;
+      workflow:canRunOn 
+        &lt;http://www.wings-workflows.org/ontology/resource.owl#Localhost&gt; ;
+      workflow:derivedFrom 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node&gt; .
+  </pre>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="hasComponent">
       <h3>hasComponent<sup class="type-op" title="object property">op</sup>
@@ -1046,22 +1091,23 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-        @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+        @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 
         &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt;
-              a ns0:Node ;
+              a workflow:Node ;
           rdfs:comment 
             "center:x=220,y=130"^^xsd:string ;
-          ns0:hasComponent 
+          workflow:hasComponent 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
             r1.owl#xmltotext_node_comp&gt; ;
-          ns0:hasComponentSetCreationRule 
+          workflow:hasComponentSetCreationRule 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
-          ns0:hasInputPort 
+          workflow:hasInputPort 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
-          ns0:hasOutputPort 
+          workflow:hasOutputPort 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
-          ns0:hasPortSetCreationRule 
+          workflow:hasPortSetCreationRule 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; . 
        </pre>
          </dd>
@@ -1095,6 +1141,21 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasComponentBinding is a WINGS workflow object property that represents a connection between a WingsWorkflowComponentVariable and a ComponentBinding i.e. a WingsWorkflowComponentVariable hasComponentBinding WingsWorkflowComponentBinding.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt;
+            workflow:hasComponentBinding 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+              library.owl#third&gt; ;
+            workflow:isConcrete 
+              true .
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1116,6 +1177,33 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasComponentSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and a SetCreationRule i.e. a WingsWorkflowNode hasComponentSetCreationRule SetCreationRule.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+          @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+                a workflow:Node ;
+            rdfs:comment 
+              "center:x=314,y=148"^^xsd:string ;
+            workflow:hasComponent 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+            workflow:hasComponentSetCreationRule 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+            workflow:hasInputPort 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+              s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
+              TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users
+              /tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+            workflow:hasOutputPort 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+              s6.owl#third_node_OutputFile&gt; ;
+            workflow:hasPortSetCreationRule 
+              &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt; .
+      </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1133,6 +1221,51 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          </dl>
       </div>
    </div>
+   <div class="entity" id="hasDataBinding">
+      <h3>hasDataBinding<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding</p>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix data_ontology: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#InputFile_html_or_xml&gt;
+            a workflow:DataVariable, data_ontology:HTMLfile ;
+        rdfs:comment 
+          "center:x=160.701757144928,y=30.331192016601562"^^xsd:string ;
+        workflow:hasDataBinding 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/library.owl#test1.html&gt; ;
+        workflow:derivedFrom 
+          lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#InputFile_html_or_xml&gt; ;
+        data_ontology:hasLanguage 
+          "english"^^xsd:string ;
+        data_ontology:hasSize 
+          4 ;
+        data_ontology:hasTopic 
+          "basic"^^xsd:string .
+    </pre>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DataVariable"
+                  title="http://www.wings-workflows.org/ontology/workflow.owl#DataVariable">DataVariable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasDestinationNode">
       <h3>hasDestinationNode<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1143,6 +1276,24 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasDestinationNode is a WINGS workflow object property that represents a connection between a WingsWorkflow Link and Node i.e. a WingsWorkflowLink hasDestinationNode a WingsWorkflowNode.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+        s6.owl#third_node_InputFile_input&gt;
+              a workflow:InputLink ;
+          workflow:hasDestinationNode 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+          workflow:hasDestinationPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt; ;
+          workflow:hasVariable 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; .
+   </pre>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -1172,6 +1323,24 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasDestinationPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasDestinationPort WingsWorkflowPort.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/
+        s6.owl#third_node_InputFile_input&gt;
+              a workflow:InputLink ;
+          workflow:hasDestinationNode 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+          workflow:hasDestinationPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt; ;
+          workflow:hasVariable 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; .
+   </pre>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -1201,6 +1370,19 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasExpressionArgument is a WINGS workflow object property that represents a connection between a SetCreationExpressio and Port.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9&gt;
+            a workflow:XProduct ;
+        workflow:hasExpressionArgument 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; .
+</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1232,6 +1414,26 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasInputPort is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and Port i.e. a WingsWorkflowNode hasInputPort WingsWorkflowPort.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+              a workflow:Node ;
+          rdfs:comment 
+            "center:x=314,y=148"^^xsd:string ;
+          workflow:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+          workflow:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+          workflow:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1264,28 +1466,28 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-      @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#r1&gt;
-            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
-        ns0:hasInputRole 
+            a workflow:WorkflowTemplate ;
+        workflow:hasInputRole 
           &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
           tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
-        ns0:hasLink 
+        workflow:hasLink 
           &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
           TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
       
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt; ;
-          ns0:hasMetadata 
+          workflow:hasMetadata 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth
             /TestingDomain/workflows/r1.owl#r1_meta&gt; ;
-          ns0:hasNode 
+          workflow:hasNode 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/export/
             users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
-          ns0:hasOutputRole 
+          workflow:hasOutputRole 
             &lt;http://ontosoft.isi.edu:8080/wings-portal/
             export/users/tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole&gt; ;
-          ns0:hasVersion 
+          workflow:hasVersion 
             3 .
 
    </pre>
@@ -1318,6 +1520,29 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasLink is a WINGS workflow object property that represents a connection between a WingsWorkflow and Link i.e. a WingsWorkflow hasLink WingsWorkflowLink.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+        workflow:hasOutputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole&gt; ;
+        workflow:hasVersion 
+          3 .
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1345,6 +1570,24 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasMetadata is a WINGS workflow object property that represents a connection between a WingsWorkflow and MetaData i.e. a WingsWorkflow hasMetadata WingsWorkflowMetaData.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1372,6 +1615,26 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasNode is a WINGS workflow object property that represents a connection between a WingsWorkflow and Node i.e. a WingsWorkflow hasNode WingsWorkflowNode.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1404,18 +1667,18 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
   tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
-        a ns0:OutputLink ;
-    ns0:hasOriginNode 
+        a workflow:OutputLink ;
+    workflow:hasOriginNode 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
-    ns0:hasOriginPort 
+    workflow:hasOriginPort 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
-    ns0:hasVariable 
+    workflow:hasVariable 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; .
     </pre>
@@ -1450,6 +1713,26 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasOriginPort is a WINGS workflow object property that represents a connection between a WingsWorkflowLink and Port i.e. a WingsWorkflowLink hasOriginPort WingsWorkflowPort.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
+        a workflow:OutputLink ;
+    workflow:hasOriginNode 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
+    workflow:hasOriginPort 
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
+
+   </pre>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -1484,29 +1767,20 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-      @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/
-      TestingDomain/workflows/r1.owl#xmltotext_node&gt;
-            a ns0:Node ;
-        rdfs:comment 
-          "center:x=220,y=130"^^xsd:string ;
-        ns0:hasComponent 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt; ;
-        ns0:hasComponentSetCreationRule
-          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule&gt; ;
-        ns0:hasInputPort 
-          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt; ;
-        ns0:hasOutputPort 
-          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
-        ns0:hasPortSetCreationRule 
-          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule&gt; .
-
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+              a workflow:Node ;
+          rdfs:comment 
+            "center:x=314,y=148"^^xsd:string ;
+          workflow:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+          workflow:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+          workflow:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+          workflow:hasOutputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile&gt; ;
 
    </pre>
          </dd>
@@ -1538,6 +1812,27 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasOutputRole is a WINGS workflow object property that represents a connection between a WingsWorkflow and Role i.e. a WingsWorkflow hasOutputRole WingsWorkflowRole.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+        workflow:hasOutputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole&gt; ;
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1565,6 +1860,31 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasPortSetCreationRule is a WINGS workflow object property that represents a connection between a WingsWorkflowNode and SetCreationRule i.e. a WingsWorkflowNode hasPortSetCreationRule WingsWorkflowSetCreationRule.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt;
+              a workflow:Node ;
+          rdfs:comment 
+            "center:x=314,y=148"^^xsd:string ;
+          workflow:hasComponent 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+          workflow:hasComponentSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt; ;
+          workflow:hasInputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord&gt; ;
+          workflow:hasOutputPort 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile&gt; ;
+          workflow:hasPortSetCreationRule 
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt; .
+
+   </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1597,18 +1917,18 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
   tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;
-        a ns0:OutputLink ;
-    ns0:hasOriginNode 
+        a workflow:OutputLink ;
+    workflow:hasOriginNode 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
-    ns0:hasOriginPort 
+    workflow:hasOriginPort 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile&gt; ;
-    ns0:hasVariable 
+    workflow:hasVariable 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#OutputTextFile&gt; .
 
@@ -1671,6 +1991,23 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS mapsToVariable is a WINGS workflow object property that represents a connection between a WingsWorkflow Role and WingsWorkflowVariable i.e. a WingsWorkflowNRole mapsToVariable WingsWorkflowVariable.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;
+            a workflow:Role ;
+        workflow:mapsToVariable 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; ;
+        workflow:hasRoleID 
+          "third_node_InputFile"^^xsd:string ;
+        workflow:hasDimensionality 
+          0 .
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1703,11 +2040,11 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+  @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile&gt;
-        a ns0:Port ;
-    ns0:satisfiesRole 
+        a workflow:Port ;
+    workflow:satisfiesRole 
       &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
       tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role&gt; .
 
@@ -1830,6 +2167,21 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS createComponentSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createComponentSets.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule&gt;
+            a workflow:PortSetRule ;
+        workflow:createSetsOn 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9&gt; ;
+        workflow:createComponentSets 
+          true .
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1880,6 +2232,23 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS createWorkflowSets is a WINGS workflow data property that represents a WingsWorkflowSetCreationRule has the ability to createWorkflowSets.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule&gt;
+            a workflow:ComponentSetRule ;
+      workflow:createSetsOn 
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp&gt; ;
+      workflow:createWorkflowSets 
+        true .
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1905,6 +2274,25 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasContributor is a WINGS workflow data property that represents a WingsWorkflow has a contributor (specified as a string).</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+    tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
+        a workflow:Metadata ;
+      workflow:hasContributor
+        "tirth"^^xsd:string ;
+      workflow:lastUpdateTime
+        "2017-07-14T07:00:00Z"^^xsd:dateTime .
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1931,6 +2319,28 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <span class="markdown">The WINGS hasDimensionality is a WINGS workflow data property that represents a WingsWorkflow Input is a collection or not (specified as a number(int)).
     </span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix data_ontology: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;
+            a workflow:Role ;
+        workflow:mapsToVariable 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile&gt; ;
+        workflow:hasRoleID 
+          "third_node_InputFile"^^xsd:string ;
+        workflow:hasDimensionality 
+          0 .
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -1977,6 +2387,26 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS hasParameterValue is a WINGS workflow data property that represents a WingsWorkflow parameter variable has a parameter value.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+      @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+      @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+      @prefix data_ontology: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#WordInput&gt;
+            a workflow:ParameterVariable ;
+        rdfs:comment 
+          "center:x=366.40000000000003,y=196.99678802490234"^^xsd:string ;
+        workflow:derivedFrom 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#WordInput&gt; ;
+        workflow:hasParameterValue 
+          "great"^^xsd:string .
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2003,13 +2433,13 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dd>
             <pre>
 
-           @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+           @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
            tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role&gt;
-              ns0:hasRoleID 
+              workflow:hasRoleID 
                 "InputFormattedFile"^^xsd:string ;
-              ns0:hasDimensionality 
+              workflow:hasDimensionality 
                 0 .
 
 
@@ -2070,34 +2500,23 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dt>Example</dt>
          <dd>
             <pre>
+      @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
 
-  @prefix ns0: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
-
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-  tirth/TestingDomain/workflows/r1.owl#r1&gt;
-        a &lt;http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate&gt; ;
-    ns0:hasInputRole 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole&gt; ;
-    ns0:hasLink 
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output&gt;,
-  
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input&gt; ;
-      ns0:hasMetadata 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#r1_meta&gt; ;
-      ns0:hasNode 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#xmltotext_node&gt; ;
-      ns0:hasOutputRole 
-        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
-        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole&gt; ;
-      ns0:hasVersion 
-        3 .
-
-   </pre>
+      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6&gt;
+            a workflow:WorkflowTemplate ;
+        workflow:hasInputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole&gt; ;
+        workflow:hasLink 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input&gt;, &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output&gt; ;
+        workflow:hasMetadata 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta&gt; ;
+        workflow:hasNode 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node&gt; ;
+        workflow:hasOutputRole 
+          &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole&gt; ;
+        workflow:hasVersion 
+          3 .
+    </pre>
          </dd>
       </dl>
       <div class="description">
@@ -2129,11 +2548,13 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
          <dt>Example</dt>
          <dd>
             <pre>
-  &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt;
-    ns0:hasComponentBinding
-      &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/library.owl#xmltotext&gt; ;
-    ns0:isConcrete
-      true . 
+        @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+
+        &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp&gt;
+          workflow:hasComponentBinding
+            &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/library.owl#xmltotext&gt; ;
+          workflow:isConcrete
+            true . 
 
    </pre>
          </dd>
@@ -2186,6 +2607,25 @@ tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
       <div class="comment">
          <span class="markdown">The WINGS lastUpdateTime is a WINGS workflow data property that represents a WingsWorkflow has a last updated time(the range being a dateTime).</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+
+    @prefix workflow: &lt;http://www.wings-workflows.org/ontology/workflow.owl#&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+    &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/
+    tirth/TestingDomain/workflows/r1.owl#r1_meta&gt;
+        a workflow:Metadata ;
+      workflow:hasContributor
+        "tirth"^^xsd:string ;
+      workflow:lastUpdateTime
+        "2017-07-14T07:00:00Z"^^xsd:dateTime .
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>

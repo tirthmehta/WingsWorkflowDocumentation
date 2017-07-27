@@ -165,7 +165,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n@prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord>\n      a ns0:ParameterVariable ;\n    rdfs:comment \n      \"center:x=315.0057067871094,y=72.19681549072266\"^^xsd:string .\n\n\n   ",
+        "value" : "\n\n@prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord>\n      a workflow:ParameterVariable ;\n    rdfs:comment \n      \"center:x=315.0057067871094,y=72.19681549072266\"^^xsd:string .\n\n\n   ",
         "type" : "label"
       } ]
     },
@@ -186,7 +186,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a ns0:OutputLink ;\n    ns0:hasOriginNode\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasVariable\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> . \n\n   ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a workflow:OutputLink ;\n    workflow:hasOriginNode\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    workflow:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    workflow:hasVariable\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> . \n\n   ",
         "type" : "label"
       } ]
     },
@@ -230,7 +230,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile_to_countingWords_node_InputTextFile>\n      a ns0:InOutLink ;\n    ns0:hasDestinationNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node> ;\n    ns0:hasDestinationPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node_InputTextFile> ;\n    ns0:hasOriginNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node> ;\n    ns0:hasOriginPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile> ;\n    ns0:hasVariable \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#Intermediate_Result> .\n\n\n        ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile_to_countingWords_node_InputTextFile>\n      a workflow:InOutLink ;\n    workflow:hasDestinationNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node> ;\n    workflow:hasDestinationPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node_InputTextFile> ;\n    workflow:hasOriginNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node> ;\n    workflow:hasOriginPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node_OutputTextFile> ;\n    workflow:hasVariable \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/abstractTest1.owl#Intermediate_Result> .\n\n\n        ",
         "type" : "label"
       } ]
     },
@@ -258,7 +258,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input>\n      a ns0:InputLink ;\n    ns0:hasDestinationNode\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasDestinationPort\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n    ns0:hasVariable\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#InputFormattedFile> .\n\n       ",
+        "value" : "\n\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input>\n          a workflow:InputLink ;\n        workflow:hasDestinationNode\n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n            tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n        workflow:hasDestinationPort\n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n            tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n        workflow:hasVariable\n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n            tirth/TestingDomain/workflows/r1.owl#InputFormattedFile> .\n\n       ",
         "type" : "label"
       } ]
     },
@@ -364,7 +364,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#OutputTextFile>\n      a ns0:DataVariable ;\n      rdfs:comment \"center:x=214.0035400390625,y=196.80760192871094\"^^xsd:string .\n\n        ",
+        "value" : "\n\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n      @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile>\n          a workflow:DataVariable ;\n          rdfs:comment \"center:x=214.0035400390625,y=196.80760192871094\"^^xsd:string .\n\n        ",
         "type" : "label"
       } ]
     },
@@ -428,7 +428,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n  \n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#r1>\n        a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n    ns0:hasInputRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n    ns0:hasLink \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n  \n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input> ;\n      ns0:hasMetadata \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#r1_meta> ;\n      ns0:hasNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n      ns0:hasOutputRole \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole> ;\n      ns0:hasVersion \n        3 .\n  ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n  \n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#r1>\n        a workflow:WorkflowTemplate ;\n    workflow:hasInputRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n    workflow:hasLink \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n\n  ",
         "type" : "label"
       } ]
     },
@@ -457,7 +457,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/s6.owl#third_node_prule>\n        a ns0:PortSetRule ;\n    ns0:createSetsOn\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9> ;\n    ns0:createComponentSets\n      true .\n\n ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/s6.owl#third_node_prule>\n        a workflow:PortSetRule ;\n    workflow:createSetsOn\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9> ;\n    workflow:createComponentSets\n      true .\n\n ",
         "type" : "label"
       } ]
     },
@@ -493,7 +493,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n@prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/\ntirth/TestingDomain/workflows/r1.owl#r1_meta>\n    a ns0:Metadata ;\n  ns0:hasContributor\n    \"tirth\"^^xsd:string ;\n  ns0:lastUpdateTime\n    \"2017-07-14T07:00:00Z\"^^xsd:dateTime .\n\n    ",
+        "value" : "\n\n    @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n    <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n    tirth/TestingDomain/workflows/r1.owl#r1_meta>\n        a workflow:Metadata ;\n      workflow:hasContributor\n        \"tirth\"^^xsd:string ;\n      workflow:lastUpdateTime\n        \"2017-07-14T07:00:00Z\"^^xsd:dateTime .\n\n    ",
         "type" : "label"
       } ]
     },
@@ -513,7 +513,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n\n@prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord>\n        a ns0:ParameterVariable ;\n    rdfs:comment\n      \"center:x=315.0057067871094,y=72.19681549072266\"^^xsd:string .\n\n   ",
+        "value" : "\n\n\n@prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord>\n        a workflow:ParameterVariable ;\n    rdfs:comment\n      \"center:x=315.0057067871094,y=72.19681549072266\"^^xsd:string .\n\n   ",
         "type" : "label"
       } ]
     },
@@ -561,7 +561,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node>\n        a ns0:Node ;\n    rdfs:comment\n      \"center:x=220,y=130\"^^xsd:string ;\n    ns0:hasComponent\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n    ns0:hasComponentSetCreationRule\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n    ns0:hasInputPort\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n    tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n    ns0:hasOutputPort\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasPortSetCreationRule \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> .\n\n\n  ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node>\n        a workflow:Node ;\n    rdfs:comment\n      \"center:x=220,y=130\"^^xsd:string ;\n    workflow:hasComponent\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n    workflow:hasComponentSetCreationRule\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n    workflow:hasInputPort\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n    workflow:hasOutputPort\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    workflow:hasPortSetCreationRule \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> .\n\n  ",
         "type" : "label"
       } ]
     },
@@ -640,6 +640,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#ComponentSetRule",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "instances" : 0,
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n         @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n         <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule>\n              a workflow:ComponentSetRule ;\n            workflow:createSetsOn \n              <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp> ;\n            workflow:createWorkflowSets \n              true .\n        ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "ComponentSetRule",
       "undefined" : "ComponentSetRule"
@@ -851,7 +859,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#r1>\n        a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n    ns0:hasInputRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n    ns0:hasLink \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n  \n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input> ;\n      ns0:hasMetadata \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#r1_meta> ;\n      ns0:hasNode \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n      ns0:hasOutputRole \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole> ;\n      ns0:hasVersion \n        3 .\n\n   ",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6>\n            a workflow:WorkflowTemplate ;\n        workflow:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole> ;\n        workflow:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output> ;\n        workflow:hasMetadata \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta> ;\n        workflow:hasNode \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node> ;\n        workflow:hasOutputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole> ;\n        workflow:hasVersion \n          3 .\n    ",
         "type" : "label"
       } ]
     },
@@ -873,7 +881,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a ns0:OutputLink ;\n    ns0:hasOriginNode \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasVariable \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> .\n    ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a workflow:OutputLink ;\n    workflow:hasOriginNode \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    workflow:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    workflow:hasVariable \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> .\n    ",
         "type" : "label"
       } ]
     },
@@ -909,7 +917,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp>\n    ns0:hasComponentBinding\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/library.owl#xmltotext> ;\n    ns0:isConcrete\n      true . \n\n   ",
+        "value" : "\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp>\n          workflow:hasComponentBinding\n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/library.owl#xmltotext> ;\n          workflow:isConcrete\n            true . \n\n   ",
         "type" : "label"
       } ]
     },
@@ -921,7 +929,7 @@
     "comment" : {
       "undefined" : "The WINGS isConcrete is a WINGS workflow data property that represents a WingsWorkflow Component Variable is abstract or concrete."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "11"
   }, {
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasComponent",
@@ -931,7 +939,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n        @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node>\n              a ns0:Node ;\n          rdfs:comment \n            \"center:x=220,y=130\"^^xsd:string ;\n          ns0:hasComponent \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/\n            r1.owl#xmltotext_node_comp> ;\n          ns0:hasComponentSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n          ns0:hasInputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n          ns0:hasOutputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n          ns0:hasPortSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> . \n       ",
+        "value" : "\n\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n        @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node>\n              a workflow:Node ;\n          rdfs:comment \n            \"center:x=220,y=130\"^^xsd:string ;\n          workflow:hasComponent \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/\n            r1.owl#xmltotext_node_comp> ;\n          workflow:hasComponentSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n          workflow:hasInputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n          workflow:hasOutputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n          workflow:hasPortSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> . \n       ",
         "type" : "label"
       } ]
     },
@@ -949,6 +957,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasPortSetCreationRule",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "16",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node>\n              a workflow:Node ;\n          rdfs:comment \n            \"center:x=314,y=148\"^^xsd:string ;\n          workflow:hasComponent \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp> ;\n          workflow:hasComponentSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule> ;\n          workflow:hasInputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord> ;\n          workflow:hasOutputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile> ;\n          workflow:hasPortSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule> .\n\n   ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasPortSetCreationRule",
       "undefined" : "hasPortSetCreationRule"
@@ -1003,6 +1019,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasContributor",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "38",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n    @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n    <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n    tirth/TestingDomain/workflows/r1.owl#r1_meta>\n        a workflow:Metadata ;\n      workflow:hasContributor\n        \"tirth\"^^xsd:string ;\n      workflow:lastUpdateTime\n        \"2017-07-14T07:00:00Z\"^^xsd:dateTime .\n\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasContributor",
       "undefined" : "hasContributor"
@@ -1021,7 +1045,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n      @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#r1>\n            a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n        ns0:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n        ns0:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/\n          TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n      \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input> ;\n          ns0:hasMetadata \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth\n            /TestingDomain/workflows/r1.owl#r1_meta> ;\n          ns0:hasNode \n            <http://ontosoft.isi.edu:8080/wings-portal/export/\n            users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n          ns0:hasOutputRole \n            <http://ontosoft.isi.edu:8080/wings-portal/\n            export/users/tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole> ;\n          ns0:hasVersion \n            3 .\n\n   ",
+        "value" : "\n\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#r1>\n            a workflow:WorkflowTemplate ;\n        workflow:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#InputFormattedFile_irole> ;\n        workflow:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/\n          TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>,\n      \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_input> ;\n          workflow:hasMetadata \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth\n            /TestingDomain/workflows/r1.owl#r1_meta> ;\n          workflow:hasNode \n            <http://ontosoft.isi.edu:8080/wings-portal/export/\n            users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n          workflow:hasOutputRole \n            <http://ontosoft.isi.edu:8080/wings-portal/\n            export/users/tirth/TestingDomain/workflows/r1.owl#OutputTextFile_orole> ;\n          workflow:hasVersion \n            3 .\n\n   ",
         "type" : "label"
       } ]
     },
@@ -1039,6 +1063,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasComponentSetCreationRule",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "16",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n          @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node>\n                a workflow:Node ;\n            rdfs:comment \n              \"center:x=314,y=148\"^^xsd:string ;\n            workflow:hasComponent \n              <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp> ;\n            workflow:hasComponentSetCreationRule \n              <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule> ;\n            workflow:hasInputPort \n              <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/\n              s6.owl#third_node_SecondInputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/\n              TestingDomain/workflows/s6.owl#third_node_InputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users\n              /tirth/TestingDomain/workflows/s6.owl#third_node_InputWord> ;\n            workflow:hasOutputPort \n              <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/\n              s6.owl#third_node_OutputFile> ;\n            workflow:hasPortSetCreationRule \n              <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule> .\n      ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasComponentSetCreationRule",
       "undefined" : "hasComponentSetCreationRule"
@@ -1057,7 +1089,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile>\n        a ns0:Port ;\n    ns0:satisfiesRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role> .\n\n    ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile>\n        a workflow:Port ;\n    workflow:satisfiesRole \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role> .\n\n    ",
         "type" : "label"
       } ]
     },
@@ -1075,6 +1107,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasInputPort",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "44",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node>\n              a workflow:Node ;\n          rdfs:comment \n            \"center:x=314,y=148\"^^xsd:string ;\n          workflow:hasComponent \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp> ;\n          workflow:hasComponentSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule> ;\n          workflow:hasInputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord> ;\n\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasInputPort",
       "undefined" : "hasInputPort"
@@ -1103,6 +1143,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasExpressionArgument",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "57",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9>\n            a workflow:XProduct ;\n        workflow:hasExpressionArgument \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord> .\n",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasExpressionArgument",
       "undefined" : "hasExpressionArgument"
@@ -1125,7 +1173,7 @@
     "comment" : {
       "undefined" : "The WINGS isInactive is a WINGS workflow data property that represents a WingsWorkflow is active or not."
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "58"
   }, {
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDocumentation",
@@ -1173,6 +1221,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#createWorkflowSets",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "66",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule>\n            a workflow:ComponentSetRule ;\n      workflow:createSetsOn \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp> ;\n      workflow:createWorkflowSets \n        true .\n\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "createWorkflowSets",
       "undefined" : "createWorkflowSets"
@@ -1191,7 +1247,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n      @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule>\n            a ns0:ComponentSetRule ;\n        ns0:createSetsOn \n          <http://ontosoft.isi.edu:8080/wings-portal/\n          export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n        ns0:createWorkflowSets \n          true .\n\n        ",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule>\n            a workflow:ComponentSetRule ;\n        workflow:createSetsOn \n          <http://ontosoft.isi.edu:8080/wings-portal/\n          export/users/tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n        workflow:createWorkflowSets \n          true .\n\n        ",
         "type" : "label"
       } ]
     },
@@ -1209,8 +1265,17 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#canRunOn",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "61",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWordsNode>\n            a workflow:Node ;\n        rdfs:comment \n          \"center:x=262.99648571014404,y=280.32958602905273\"^^xsd:string ;\n        workflow:hasComponent \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords> ;\n        workflow:hasInputPort \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_InputTextFile_0001>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_WordInput_0001> ;\n        workflow:hasOutputPort \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#countingWords_node_OutputTextFile_1> ;\n        workflow:canRunOn \n          <http://www.wings-workflows.org/ontology/resource.owl#Localhost> ;\n        workflow:derivedFrom \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#countingWords_node> .\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "canRunOn"
+      "IRI-based" : "canRunOn",
+      "undefined" : "canRunOn"
     },
     "domain" : "8",
     "attributes" : [ "object" ],
@@ -1219,6 +1284,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationNode",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "8",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/\n        s6.owl#third_node_InputFile_input>\n              a workflow:InputLink ;\n          workflow:hasDestinationNode \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node> ;\n          workflow:hasDestinationPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile> ;\n          workflow:hasVariable \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile> .\n   ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasDestinationNode",
       "undefined" : "hasDestinationNode"
@@ -1233,6 +1306,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasParameterValue",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "33",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n      @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n      @prefix data_ontology: <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#WordInput>\n            a workflow:ParameterVariable ;\n        rdfs:comment \n          \"center:x=366.40000000000003,y=196.99678802490234\"^^xsd:string ;\n        workflow:derivedFrom \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#WordInput> ;\n        workflow:hasParameterValue \n          \"great\"^^xsd:string .\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasParameterValue",
       "undefined" : "hasParameterValue"
@@ -1247,8 +1328,17 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#derivedFrom",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "49",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n    @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n    \n    <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#htmltotextNode>\n          a workflow:Node ;\n      rdfs:comment \n        \"center:x=160.701757144928,y=113.66397857666016\"^^xsd:string ;\n      workflow:hasComponent \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#htmltotext> ;\n      workflow:hasInputPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#ConvertToText_node_InputFormattedFile_0000> ;\n      workflow:hasOutputPort \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#ConvertToText_node_OutputTextFile_0> ;\n      workflow:canRunOn \n        <http://www.wings-workflows.org/ontology/resource.owl#Localhost> ;\n      workflow:derivedFrom \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#ConvertToText_node> .\n  ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "derivedFrom"
+      "IRI-based" : "derivedFrom",
+      "undefined" : "derivedFrom"
     },
     "domain" : "49",
     "attributes" : [ "object" ],
@@ -1267,6 +1357,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#createComponentSets",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "77",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_prule>\n            a workflow:PortSetRule ;\n        workflow:createSetsOn \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#_xprod-65d100d0-5360-45a5-a66a-43bf1e7116c9> ;\n        workflow:createComponentSets \n          true .\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "createComponentSets",
       "undefined" : "createComponentSets"
@@ -1291,6 +1389,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#mapsToVariable",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "22",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole>\n            a workflow:Role ;\n        workflow:mapsToVariable \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile> ;\n        workflow:hasRoleID \n          \"third_node_InputFile\"^^xsd:string ;\n        workflow:hasDimensionality \n          0 .\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "mapsToVariable",
       "undefined" : "mapsToVariable"
@@ -1310,8 +1416,17 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDataBinding",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "32",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix owl: <http://www.w3.org/2002/07/owl#> .\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n      @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n      @prefix data_ontology: <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/executions/abstractTest1-83-7336709c-6108-4fc8-9ecd-810f27c8d870.owl#InputFile_html_or_xml>\n            a workflow:DataVariable, data_ontology:HTMLfile ;\n        rdfs:comment \n          \"center:x=160.701757144928,y=30.331192016601562\"^^xsd:string ;\n        workflow:hasDataBinding \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/library.owl#test1.html> ;\n        workflow:derivedFrom \n          lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/abstractTest1.owl#InputFile_html_or_xml> ;\n        data_ontology:hasLanguage \n          \"english\"^^xsd:string ;\n        data_ontology:hasSize \n          4 ;\n        data_ontology:hasTopic \n          \"basic\"^^xsd:string .\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
-      "IRI-based" : "hasDataBinding"
+      "IRI-based" : "hasDataBinding",
+      "undefined" : "hasDataBinding"
     },
     "domain" : "27",
     "attributes" : [ "object" ],
@@ -1325,6 +1440,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasOriginPort",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "44",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a workflow:OutputLink ;\n    workflow:hasOriginNode \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    workflow:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n\n   ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasOriginPort",
       "undefined" : "hasOriginPort"
@@ -1353,6 +1476,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasComponentBinding",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "46",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp>\n            workflow:hasComponentBinding \n              <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/\n              library.owl#third> ;\n            workflow:isConcrete \n              true .\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasComponentBinding",
       "undefined" : "hasComponentBinding"
@@ -1371,7 +1502,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n  @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a ns0:OutputLink ;\n    ns0:hasOriginNode \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    ns0:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    ns0:hasVariable \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> .\n\n   ",
+        "value" : "\n\n  @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n  <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n  tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile_output>\n        a workflow:OutputLink ;\n    workflow:hasOriginNode \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node> ;\n    workflow:hasOriginPort \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n    workflow:hasVariable \n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n      tirth/TestingDomain/workflows/r1.owl#OutputTextFile> .\n\n   ",
         "type" : "label"
       } ]
     },
@@ -1403,6 +1534,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasMetadata",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "37",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6>\n            a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n        workflow:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole> ;\n        workflow:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output> ;\n        workflow:hasMetadata \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta> ;\n\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasMetadata",
       "undefined" : "hasMetadata"
@@ -1421,7 +1560,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n      @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/\n      TestingDomain/workflows/r1.owl#xmltotext_node>\n            a ns0:Node ;\n        rdfs:comment \n          \"center:x=220,y=130\"^^xsd:string ;\n        ns0:hasComponent \n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n        tirth/TestingDomain/workflows/r1.owl#xmltotext_node_comp> ;\n        ns0:hasComponentSetCreationRule\n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_crule> ;\n        ns0:hasInputPort \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile> ;\n        ns0:hasOutputPort \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_OutputTextFile> ;\n        ns0:hasPortSetCreationRule \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n          tirth/TestingDomain/workflows/r1.owl#xmltotext_node_prule> .\n\n\n   ",
+        "value" : "\n\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node>\n              a workflow:Node ;\n          rdfs:comment \n            \"center:x=314,y=148\"^^xsd:string ;\n          workflow:hasComponent \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_comp> ;\n          workflow:hasComponentSetCreationRule \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_crule> ;\n          workflow:hasInputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord> ;\n          workflow:hasOutputPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile> ;\n\n   ",
         "type" : "label"
       } ]
     },
@@ -1439,6 +1578,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasOutputRole",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "40",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6>\n            a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n        workflow:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole> ;\n        workflow:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output> ;\n        workflow:hasMetadata \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta> ;\n        workflow:hasNode \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node> ;\n        workflow:hasOutputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole> ;\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasOutputRole",
       "undefined" : "hasOutputRole"
@@ -1457,7 +1604,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "\n\n           @prefix ns0: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n           <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n           tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role>\n              ns0:hasRoleID \n                \"InputFormattedFile\"^^xsd:string ;\n              ns0:hasDimensionality \n                0 .\n\n\n       ",
+        "value" : "\n\n           @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n           <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n           tirth/TestingDomain/workflows/r1.owl#xmltotext_node_InputFormattedFile_role>\n              workflow:hasRoleID \n                \"InputFormattedFile\"^^xsd:string ;\n              workflow:hasDimensionality \n                0 .\n\n\n       ",
         "type" : "label"
       } ]
     },
@@ -1475,6 +1622,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDestinationPort",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "44",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n        @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n        <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/\n        s6.owl#third_node_InputFile_input>\n              a workflow:InputLink ;\n          workflow:hasDestinationNode \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node> ;\n          workflow:hasDestinationPort \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile> ;\n          workflow:hasVariable \n            <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile> .\n   ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasDestinationPort",
       "undefined" : "hasDestinationPort"
@@ -1489,6 +1644,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasDimensionality",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "97",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n      @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n      @prefix data_ontology: <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole>\n            a workflow:Role ;\n        workflow:mapsToVariable \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile> ;\n        workflow:hasRoleID \n          \"third_node_InputFile\"^^xsd:string ;\n        workflow:hasDimensionality \n          0 .\n\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasDimensionality",
       "undefined" : "hasDimensionality"
@@ -1497,12 +1660,20 @@
     "comment" : {
       "undefined" : "The WINGS hasDimensionality is a WINGS workflow data property that represents a WingsWorkflow Input is a collection or not (specified as a number(int)).\n    "
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "99"
   }, {
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasNode",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "8",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6>\n            a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n        workflow:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole> ;\n        workflow:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output> ;\n        workflow:hasMetadata \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta> ;\n        workflow:hasNode \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node> ;\n\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasNode",
       "undefined" : "hasNode"
@@ -1517,6 +1688,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#lastUpdateTime",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "50",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n\n    @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n    <http://ontosoft.isi.edu:8080/wings-portal/export/users/\n    tirth/TestingDomain/workflows/r1.owl#r1_meta>\n        a workflow:Metadata ;\n      workflow:hasContributor\n        \"tirth\"^^xsd:string ;\n      workflow:lastUpdateTime\n        \"2017-07-14T07:00:00Z\"^^xsd:dateTime .\n\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "lastUpdateTime",
       "undefined" : "lastUpdateTime"
@@ -1531,6 +1710,14 @@
     "iri" : "http://www.wings-workflows.org/ontology/workflow.owl#hasLink",
     "baseIri" : "http://www.wings-workflows.org/ontology/workflow.owl",
     "range" : "7",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "\n      @prefix workflow: <http://www.wings-workflows.org/ontology/workflow.owl#> .\n\n      <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6>\n            a <http://www.wings-workflows.org/ontology/workflow.owl#WorkflowTemplate> ;\n        workflow:hasInputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputFile_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#InputWord_irole>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#SecondInputFile_irole> ;\n        workflow:hasLink \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_SecondInputFile_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_InputWord_input>, <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node_OutputFile_output> ;\n        workflow:hasMetadata \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#s6_meta> ;\n        workflow:hasNode \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#third_node> ;\n        workflow:hasOutputRole \n          <http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/workflows/s6.owl#OutputFile_orole> ;\n        workflow:hasVersion \n          3 .\n    ",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "hasLink",
       "undefined" : "hasLink"

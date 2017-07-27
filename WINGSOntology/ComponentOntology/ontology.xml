@@ -70,6 +70,19 @@
         <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasInput is a WINGS workflow component object property that represents a connection between a WingsWorkflowComponent and the component&apos;s argument i.e. a WingsWorkflowComponent hasInput a WingsWorkflowComponentArgument.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasInput</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+
+	component_library:SingleWordCount  a        component_library:SingleWordCountClass ;
+	        wings_component:hasDocumentation  &quot;&lt;font face=\&quot;null\&quot;&gt;This component counts occurrences of a single word in a 
+	        								   file.&lt;/font&gt;&quot; ;  								   
+	       	wings_component:hasInput          component_library:SingleWordCount_number , component_library:SingleWordCount_word 
+	       									  ,component_library:SingleWordCount_sampleInputFile1 ;
+	        wings_component:hasOutput         component_library:SingleWordCount_outputCountFile ;
+	        wings_component:isConcrete        false .
+         </skos:example>
     </owl:ObjectProperty>
     
 
@@ -83,6 +96,19 @@
         <rdfs:range rdf:resource="http://www.wings-workflows.org/ontology/component.owl#DataArgument"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasOutput is a WINGS workflow component object property that represents a connection between a WingsWorkflowComponent and the component&apos;s data argument i.e. a WingsWorkflowComponent hasOutput a WingsWorkflowDataArgument.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasOutput</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+
+	component_library:SingleWordCount  a        component_library:SingleWordCountClass ;
+	        wings_component:hasDocumentation  &quot;&lt;font face=\&quot;null\&quot;&gt;This component counts occurrences of a single word in a 
+	        								   file.&lt;/font&gt;&quot; ;  								   
+	       	wings_component:hasInput          component_library:SingleWordCount_number , component_library:SingleWordCount_word 
+	       									  ,component_library:SingleWordCount_sampleInputFile1 ;
+	        wings_component:hasOutput         component_library:SingleWordCount_outputCountFile ;
+	        wings_component:isConcrete        false .
+         </skos:example>
     </owl:ObjectProperty>
     
 
@@ -108,6 +134,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasArgumentID is a WINGS workflow component data property that represents a WingsWorkflowComponent having a argumentID (specified as string) for its component.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasArgumentID</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    @prefix ontology:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .	
+
+    component_library:spacing_OutputFile1
+	        a                      ontology:TextFile , wings_component:DataArgument ;
+	        wings_component:hasArgumentID      &quot;OutputFile1&quot; ;
+	        wings_component:hasArgumentName    &quot;-o1&quot; ;
+	        wings_component:hasDimensionality  0 .
+     </skos:example>
     </owl:DatatypeProperty>
     
 
@@ -134,6 +172,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasArgumentName is a WINGS workflow component data property that represents a WingsWorkflowComponent having a argumentName (specified as a string) for its component.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasArgumentName</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+    @prefix ontology:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:spacing_OutputFile1
+	        a                      ontology:TextFile , wings_component:DataArgument ;
+	        wings_component:hasArgumentID      &quot;OutputFile1&quot; ;
+	        wings_component:hasArgumentName    &quot;-o1&quot; ;
+	        wings_component:hasDimensionality  0 .
+     </skos:example>
     </owl:DatatypeProperty>
     
 
@@ -145,7 +195,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasBindingID is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having a bindingID (specified as a string) for its componentArgument.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasBindingID is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having a ID (specified as a string) for its componentArgument.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasBindingID</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -158,7 +208,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionIndexProperties is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensional index properties (specified as a string) for its componentArgument.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionIndexProperties is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensional properties (specified as a string) for its componentArgument.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDimensionIndexProperties</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -171,7 +221,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionSizes is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimemsional sizes (specified as a string) for its componentArgument.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionSizes is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensional sizes (specified as a string) for its componentArgument.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDimensionSizes</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -187,18 +237,18 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDimensionality is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensionality (specficied as a number(int) 0,1).</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDimensionality</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-	        &lt;https://w3id.org/wings/TestingDomain#INPUTFILE&gt;
-	        a  &lt;https://w3id.org/wings/TestingDomain/Data/TextFile&gt; ,
-	           &lt;https://w3id.org/wings/TestingDomain/Data/DataArgument&gt; ,
-	           &lt;https://w3id.org/wings/TestingDomain#TextFile&gt; ,
-	           &lt;https://w3id.org/wings/TestingDomain#DataArgument&gt; ;
-	        
-            &lt;http://www.wings-workflows.org/ontology/component.owl#hasArgumentID&gt;
-	                &quot;InputFile&quot; ;
-	        &lt;http://www.wings-workflows.org/ontology/component.owl#hasArgumentName&gt;
-	                &quot;-i1&quot; ;
-	        &lt;http://www.wings-workflows.org/ontology/component.owl#hasDimensionality&gt;
-	                &quot;0&quot;^^xsd:int .
+
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:ConcrCounterNewerOne_NumberInput
+	        a                      wings_component:ParameterArgument ;
+	        wings_component:hasArgumentID      &quot;NumberInput&quot; ;
+	        wings_component:hasArgumentName    &quot;-p1&quot; ;
+	        wings_component:hasDimensionality  0 ;
+	        wings_component:hasValue           0 .
+
     </skos:example>
     </owl:DatatypeProperty>
     
@@ -212,6 +262,19 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasDocumentation is a WINGS workflow component data property that represents a WingsWorkflowComponent having a documentation for its component.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasDocumentation</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+
+	component_library:SingleWordCount  a        component_library:SingleWordCountClass ;
+	        wings_component:hasDocumentation  &quot;&lt;font face=\&quot;null\&quot;&gt;This component counts occurrences of a single word in a 
+	        								   file.&lt;/font&gt;&quot; ;  								   
+	       	wings_component:hasInput          component_library:SingleWordCount_number , component_library:SingleWordCount_word 
+	       									  ,component_library:SingleWordCount_sampleInputFile1 ;
+	        wings_component:hasOutput         component_library:SingleWordCount_outputCountFile ;
+	        wings_component:isConcrete        false .
+         </skos:example>
     </owl:DatatypeProperty>
     
 
@@ -224,6 +287,24 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasLocation is a WINGS workflow component data property that represents a WingsWorkflowComponent having a location (specified as a string) for its component.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasLocation</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix resource:   &lt;http://www.wings-workflows.org/ontology/resource.owl#&gt; .
+
+	component_library:htmltotext  a                  component_library:htmltotextClass ;
+	        wings_component:hasDocumentation       &quot;&quot; ;
+	        wings_component:hasInput               component_library:htmltotext_InputFormattedFile ;
+	        wings_component:hasLocation            &quot;/opt/wings/storage/default/users/tirth/TestingDomain/code/library/htmltotext&quot; ;
+	        wings_component:hasOutput              component_library:htmltotext_OutputTextFile ;
+	        wings_component:isConcrete             true ;
+	        resource:hasHardwareDependency  [ a                      resource:HardwareDependency ;
+	                                     resource:needs64bit         false ;
+	                                     resource:requiresMemoryGB   &quot;0.0&quot;^^xsd:float ;
+	                                     resource:requiresStorageGB  &quot;0.0&quot;^^xsd:float
+	                                   ] .
+         </skos:example>
     </owl:DatatypeProperty>
     
 
@@ -236,6 +317,24 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasRule is a WINGS workflow component data property that represents a WingsWorkflowComponent having a rule (specified as a block of code in strings) for its component.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasRule</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix resource:   &lt;http://www.wings-workflows.org/ontology/resource.owl#&gt; .
+
+	component_library:breakDoc  a                    component_library:breakDocClass ;
+	        wings_component:hasInput               component_library:breakDoc_nToBreakInto , component_library:breakDoc_InputFile1 ;
+	        wings_component:hasLocation            &quot;/opt/wings/storage/default/users/tirth/TestingDomain/code/library/breakDoc&quot; ;
+	        wings_component:hasOutput              component_library:breakDoc_OutputFiles ;
+	        wings_component:hasRule                &quot;[ SetOutputCollectionSize: (?c rdf:type acdom:breakDocClass) (?c ac:hasInput ?idv) (?idv ac:hasArgumentID &apos;InputFile1&apos;) (?c ac:hasInput ?ipv) (?ipv ac:hasArgumentID &apos;nToBreakInto&apos;) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID &apos;OutputFiles&apos;) (?ipv ac:hasValue ?num) -&gt; (?odv ac:hasDimensionSizes ?num) print(Breaking ?idv into ?num files) ]&quot; ;
+	        wings_component:isConcrete             true ;
+	        resource:hasHardwareDependency  [ a                      resource:HardwareDependency ;
+	                                     resource:needs64bit         false ;
+	                                     resource:requiresMemoryGB   &quot;0.0&quot;^^xsd:float ;
+	                                     resource:requiresStorageGB  &quot;0.0&quot;^^xsd:float
+	                                   ] .
+	         </skos:example>
     </owl:DatatypeProperty>
     
 
@@ -248,6 +347,19 @@
         <rdfs:domain rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ParameterArgument"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS hasValue is a WINGS workflow component data property that represents a WingsWorkflowComponentParameterArgument having a value for the parameter.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasValue</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+   	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:ConcrCounterNewerOne_NumberInput
+	        a                      wings_component:ParameterArgument ;
+	        wings_component:hasArgumentID      &quot;NumberInput&quot; ;
+	        wings_component:hasArgumentName    &quot;-p1&quot; ;
+	        wings_component:hasDimensionality  0 ;
+	        wings_component:hasValue           0 .
+
+    </skos:example>
     </owl:DatatypeProperty>
     
 
@@ -262,23 +374,14 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS isConcrete is a WINGS workflow component data property that represents a WingsWorkflowComponent is abstract or not. If it is abstract then the value is false, else its true. (range is boolean) </rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isConcrete</rdfs:label>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-        &lt;https://w3id.org/wings/TestingDomain#SORT_V1&gt;
-        a           &lt;https://w3id.org/wings/TestingDomain#SORT_CLASSV1&gt; ;
-        			rdfs:label  &quot;SORT&quot; ;
-        &lt;http://www.w3.org/ns/prov#wasAttributedTo&gt;
-                &quot;tirth&quot; ;
-        &lt;http://www.wings-workflows.org/ontology/component.owl#hasDocumentation&gt;
-                &quot;&quot; ;
-                
-        &lt;http://www.wings-workflows.org/ontology/component.owl#hasInput&gt;
-            &lt;https://w3id.org/wings/TestingDomain#INPUTFILE&gt; ,
-            &lt;https://w3id.org/wings/TestingDomain#INPUTWORD&gt; ,
-            &lt;https://w3id.org/wings/TestingDomain#SECOND-INPUTFILE&gt; ;
+   	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
 
-        &lt;http://www.wings-workflows.org/ontology/component.owl#hasOutput&gt;
-            &lt;https://w3id.org/wings/TestingDomain#OUTPUTFILE&gt; ;
-        &lt;http://www.wings-workflows.org/ontology/component.owl#isConcrete&gt;
-                false .
+	component_library:TRIALCONCR  a       component_library:TRIALCONCRClass ;
+	        wings_component:hasInput    component_library:TRIALCONCR_InputWord , component_library:TRIALCONCR_InputFile ;
+	        wings_component:hasOutput   component_library:TRIALCONCR_OutputFile ;
+	        wings_component:isConcrete  false .
     </skos:example>
     </owl:DatatypeProperty>
     
@@ -315,6 +418,16 @@
     <owl:Class rdf:about="http://www.wings-workflows.org/ontology/component.owl#Component">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS Component is a WINGS component class that represents a component of WINGS Workflow template specification.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Component</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+   	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:splitClass
+	      	a        owl:Class ;
+	        rdfs:subClassOf  
+	        	wings_component:Component .
+    </skos:example>
     </owl:Class>
     
 
@@ -336,6 +449,19 @@
         <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS DataArgument is a WINGS component class that represents a data based argument and it has the Component argument as a subclass.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataArgument</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	@prefix data_ontology:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+    @prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+	component_library:Convert_OutputFile
+	        a                      data_ontology:TextFile , wings_component:DataArgument ;
+	        wings_component:hasArgumentID      &quot;OutputFile&quot; ;
+	        wings_component:hasArgumentName    &quot;-o1&quot; ;
+	        wings_component:hasDimensionality  0 .
+
+    </skos:example>
     </owl:Class>
     
 
@@ -347,6 +473,18 @@
         <rdfs:subClassOf rdf:resource="http://www.wings-workflows.org/ontology/component.owl#ComponentArgument"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The WINGS ParameterArgument is a WINGS component class that represents a parameter based argument and it has the Component argument as a subclass.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ParameterArgument</rdfs:label>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+							   library.owl#&gt; .	
+
+	component_library:count3_LetterInput
+			a                      wings_component:ParameterArgument ;
+			wings_component:hasArgumentID      &quot;LetterInput&quot; ;
+			wings_component:hasArgumentName    &quot;-p3&quot; ;
+			wings_component:hasDimensionality  0 ;
+			wings_component:hasValue           &quot;&quot; .
+    </skos:example>
     </owl:Class>
 </rdf:RDF>
 

@@ -30,6 +30,21 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS Component is a WINGS component class that represents a component of WINGS Workflow template specification.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+   	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:splitClass
+	      	a        owl:Class ;
+	        rdfs:subClassOf  
+	        	wings_component:Component .
+    </pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
@@ -110,6 +125,24 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS DataArgument is a WINGS component class that represents a data based argument and it has the Component argument as a subclass.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+	@prefix data_ontology:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+    @prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+	component_library:Convert_OutputFile
+	        a                      data_ontology:TextFile , wings_component:DataArgument ;
+	        wings_component:hasArgumentID      "OutputFile" ;
+	        wings_component:hasArgumentName    "-o1" ;
+	        wings_component:hasDimensionality  0 .
+
+    </pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -135,6 +168,23 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS ParameterArgument is a WINGS component class that represents a parameter based argument and it has the Component argument as a subclass.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library: &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+							   library.owl#&gt; .	
+
+	component_library:count3_LetterInput
+			a                      wings_component:ParameterArgument ;
+			wings_component:hasArgumentID      "LetterInput" ;
+			wings_component:hasArgumentName    "-p3" ;
+			wings_component:hasDimensionality  0 ;
+			wings_component:hasValue           "" .
+    </pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -211,6 +261,24 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasInput is a WINGS workflow component object property that represents a connection between a WingsWorkflowComponent and the component's argument i.e. a WingsWorkflowComponent hasInput a WingsWorkflowComponentArgument.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+
+	component_library:SingleWordCount  a        component_library:SingleWordCountClass ;
+	        wings_component:hasDocumentation  "&lt;font face=\"null\"&gt;This component counts occurrences of a single word in a 
+	        								   file.&lt;/font&gt;" ;  								   
+	       	wings_component:hasInput          component_library:SingleWordCount_number , component_library:SingleWordCount_word 
+	       									  ,component_library:SingleWordCount_sampleInputFile1 ;
+	        wings_component:hasOutput         component_library:SingleWordCount_outputCountFile ;
+	        wings_component:isConcrete        false .
+         </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -244,6 +312,24 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasOutput is a WINGS workflow component object property that represents a connection between a WingsWorkflowComponent and the component's data argument i.e. a WingsWorkflowComponent hasOutput a WingsWorkflowDataArgument.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+
+	component_library:SingleWordCount  a        component_library:SingleWordCountClass ;
+	        wings_component:hasDocumentation  "&lt;font face=\"null\"&gt;This component counts occurrences of a single word in a 
+	        								   file.&lt;/font&gt;" ;  								   
+	       	wings_component:hasInput          component_library:SingleWordCount_number , component_library:SingleWordCount_word 
+	       									  ,component_library:SingleWordCount_sampleInputFile1 ;
+	        wings_component:hasOutput         component_library:SingleWordCount_outputCountFile ;
+	        wings_component:isConcrete        false .
+         </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -333,6 +419,23 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasArgumentID is a WINGS workflow component data property that represents a WingsWorkflowComponent having a argumentID (specified as string) for its component.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+    @prefix ontology:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .	
+
+    component_library:spacing_OutputFile1
+	        a                      ontology:TextFile , wings_component:DataArgument ;
+	        wings_component:hasArgumentID      "OutputFile1" ;
+	        wings_component:hasArgumentName    "-o1" ;
+	        wings_component:hasDimensionality  0 .
+     </pre>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -387,6 +490,23 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasArgumentName is a WINGS workflow component data property that represents a WingsWorkflowComponent having a argumentName (specified as a string) for its component.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+    @prefix ontology:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/data/ontology.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:spacing_OutputFile1
+	        a                      ontology:TextFile , wings_component:DataArgument ;
+	        wings_component:hasArgumentID      "OutputFile1" ;
+	        wings_component:hasArgumentName    "-o1" ;
+	        wings_component:hasDimensionality  0 .
+     </pre>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -412,7 +532,7 @@ This section provides details for each class and property defined by WINGS Compo
       <p>
          <strong>IRI:</strong> http://www.wings-workflows.org/ontology/component.owl#hasBindingID</p>
       <div class="comment">
-         <span class="markdown">The WINGS hasBindingID is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having a bindingID (specified as a string) for its componentArgument.</span>
+         <span class="markdown">The WINGS hasBindingID is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having a ID (specified as a string) for its componentArgument.</span>
       </div>
       <div class="description">
          <p>
@@ -445,18 +565,18 @@ This section provides details for each class and property defined by WINGS Compo
          <dt>Example</dt>
          <dd>
             <pre>
-	        &lt;https://w3id.org/wings/TestingDomain#INPUTFILE&gt;
-	        a  &lt;https://w3id.org/wings/TestingDomain/Data/TextFile&gt; ,
-	           &lt;https://w3id.org/wings/TestingDomain/Data/DataArgument&gt; ,
-	           &lt;https://w3id.org/wings/TestingDomain#TextFile&gt; ,
-	           &lt;https://w3id.org/wings/TestingDomain#DataArgument&gt; ;
-	        
-            &lt;http://www.wings-workflows.org/ontology/component.owl#hasArgumentID&gt;
-	                "InputFile" ;
-	        &lt;http://www.wings-workflows.org/ontology/component.owl#hasArgumentName&gt;
-	                "-i1" ;
-	        &lt;http://www.wings-workflows.org/ontology/component.owl#hasDimensionality&gt;
-	                "0"^^xsd:int .
+
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:ConcrCounterNewerOne_NumberInput
+	        a                      wings_component:ParameterArgument ;
+	        wings_component:hasArgumentID      "NumberInput" ;
+	        wings_component:hasArgumentName    "-p1" ;
+	        wings_component:hasDimensionality  0 ;
+	        wings_component:hasValue           0 .
+
     </pre>
          </dd>
       </dl>
@@ -485,7 +605,7 @@ This section provides details for each class and property defined by WINGS Compo
       <p>
          <strong>IRI:</strong> http://www.wings-workflows.org/ontology/component.owl#hasDimensionIndexProperties</p>
       <div class="comment">
-         <span class="markdown">The WINGS hasDimensionIndexProperties is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensional index properties (specified as a string) for its componentArgument.</span>
+         <span class="markdown">The WINGS hasDimensionIndexProperties is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensional properties (specified as a string) for its componentArgument.</span>
       </div>
       <div class="description">
          <p>
@@ -512,7 +632,7 @@ This section provides details for each class and property defined by WINGS Compo
       <p>
          <strong>IRI:</strong> http://www.wings-workflows.org/ontology/component.owl#hasDimensionSizes</p>
       <div class="comment">
-         <span class="markdown">The WINGS hasDimensionSizes is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimemsional sizes (specified as a string) for its componentArgument.</span>
+         <span class="markdown">The WINGS hasDimensionSizes is a WINGS workflow component data property that represents a WingsWorkflowComponentArgument having dimensional sizes (specified as a string) for its componentArgument.</span>
       </div>
       <div class="description">
          <p>
@@ -541,6 +661,24 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasDocumentation is a WINGS workflow component data property that represents a WingsWorkflowComponent having a documentation for its component.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+
+	component_library:SingleWordCount  a        component_library:SingleWordCountClass ;
+	        wings_component:hasDocumentation  "&lt;font face=\"null\"&gt;This component counts occurrences of a single word in a 
+	        								   file.&lt;/font&gt;" ;  								   
+	       	wings_component:hasInput          component_library:SingleWordCount_number , component_library:SingleWordCount_word 
+	       									  ,component_library:SingleWordCount_sampleInputFile1 ;
+	        wings_component:hasOutput         component_library:SingleWordCount_outputCountFile ;
+	        wings_component:isConcrete        false .
+         </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -566,6 +704,29 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasLocation is a WINGS workflow component data property that represents a WingsWorkflowComponent having a location (specified as a string) for its component.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix resource:   &lt;http://www.wings-workflows.org/ontology/resource.owl#&gt; .
+
+	component_library:htmltotext  a                  component_library:htmltotextClass ;
+	        wings_component:hasDocumentation       "" ;
+	        wings_component:hasInput               component_library:htmltotext_InputFormattedFile ;
+	        wings_component:hasLocation            "/opt/wings/storage/default/users/tirth/TestingDomain/code/library/htmltotext" ;
+	        wings_component:hasOutput              component_library:htmltotext_OutputTextFile ;
+	        wings_component:isConcrete             true ;
+	        resource:hasHardwareDependency  [ a                      resource:HardwareDependency ;
+	                                     resource:needs64bit         false ;
+	                                     resource:requiresMemoryGB   "0.0"^^xsd:float ;
+	                                     resource:requiresStorageGB  "0.0"^^xsd:float
+	                                   ] .
+         </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -591,6 +752,29 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasRule is a WINGS workflow component data property that represents a WingsWorkflowComponent having a rule (specified as a block of code in strings) for its component.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/
+								 library.owl#&gt; .
+	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix resource:   &lt;http://www.wings-workflows.org/ontology/resource.owl#&gt; .
+
+	component_library:breakDoc  a                    component_library:breakDocClass ;
+	        wings_component:hasInput               component_library:breakDoc_nToBreakInto , component_library:breakDoc_InputFile1 ;
+	        wings_component:hasLocation            "/opt/wings/storage/default/users/tirth/TestingDomain/code/library/breakDoc" ;
+	        wings_component:hasOutput              component_library:breakDoc_OutputFiles ;
+	        wings_component:hasRule                "[ SetOutputCollectionSize: (?c rdf:type acdom:breakDocClass) (?c ac:hasInput ?idv) (?idv ac:hasArgumentID 'InputFile1') (?c ac:hasInput ?ipv) (?ipv ac:hasArgumentID 'nToBreakInto') (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID 'OutputFiles') (?ipv ac:hasValue ?num) -&gt; (?odv ac:hasDimensionSizes ?num) print(Breaking ?idv into ?num files) ]" ;
+	        wings_component:isConcrete             true ;
+	        resource:hasHardwareDependency  [ a                      resource:HardwareDependency ;
+	                                     resource:needs64bit         false ;
+	                                     resource:requiresMemoryGB   "0.0"^^xsd:float ;
+	                                     resource:requiresStorageGB  "0.0"^^xsd:float
+	                                   ] .
+	         </pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -616,6 +800,24 @@ This section provides details for each class and property defined by WINGS Compo
       <div class="comment">
          <span class="markdown">The WINGS hasValue is a WINGS workflow component data property that represents a WingsWorkflowComponentParameterArgument having a value for the parameter.</span>
       </div>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>
+   	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
+
+    component_library:ConcrCounterNewerOne_NumberInput
+	        a                      wings_component:ParameterArgument ;
+	        wings_component:hasArgumentID      "NumberInput" ;
+	        wings_component:hasArgumentName    "-p1" ;
+	        wings_component:hasDimensionality  0 ;
+	        wings_component:hasValue           0 .
+
+    </pre>
+         </dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:</strong> functional</p>
@@ -643,23 +845,14 @@ This section provides details for each class and property defined by WINGS Compo
          <dt>Example</dt>
          <dd>
             <pre>
-        &lt;https://w3id.org/wings/TestingDomain#SORT_V1&gt;
-        a           &lt;https://w3id.org/wings/TestingDomain#SORT_CLASSV1&gt; ;
-        			rdfs:label  "SORT" ;
-        &lt;http://www.w3.org/ns/prov#wasAttributedTo&gt;
-                "tirth" ;
-        &lt;http://www.wings-workflows.org/ontology/component.owl#hasDocumentation&gt;
-                "" ;
-                
-        &lt;http://www.wings-workflows.org/ontology/component.owl#hasInput&gt;
-            &lt;https://w3id.org/wings/TestingDomain#INPUTFILE&gt; ,
-            &lt;https://w3id.org/wings/TestingDomain#INPUTWORD&gt; ,
-            &lt;https://w3id.org/wings/TestingDomain#SECOND-INPUTFILE&gt; ;
+   	@prefix wings_component:   &lt;http://www.wings-workflows.org/ontology/component.owl#&gt; .
+	@prefix component_library:   &lt;http://ontosoft.isi.edu:8080/wings-portal/export/users/tirth/TestingDomain/components/		
+								 library.owl#&gt; .	
 
-        &lt;http://www.wings-workflows.org/ontology/component.owl#hasOutput&gt;
-            &lt;https://w3id.org/wings/TestingDomain#OUTPUTFILE&gt; ;
-        &lt;http://www.wings-workflows.org/ontology/component.owl#isConcrete&gt;
-                false .
+	component_library:TRIALCONCR  a       component_library:TRIALCONCRClass ;
+	        wings_component:hasInput    component_library:TRIALCONCR_InputWord , component_library:TRIALCONCR_InputFile ;
+	        wings_component:hasOutput   component_library:TRIALCONCR_OutputFile ;
+	        wings_component:isConcrete  false .
     </pre>
          </dd>
       </dl>
